@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inkore.UI.WinForms.Styler", "Inkore.UI.WinForms.Styler\Inkore.UI.WinForms.Styler.csproj", "{058F123E-D366-4023-94EF-E4AF8EC5D101}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug NET40|Any CPU = Debug NET40|Any CPU
+		Release NET20|Any CPU = Release NET20|Any CPU
+		Release NET40|Any CPU = Release NET40|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{058F123E-D366-4023-94EF-E4AF8EC5D101}.Debug NET40|Any CPU.ActiveCfg = Debug NET40|Any CPU
+		{058F123E-D366-4023-94EF-E4AF8EC5D101}.Debug NET40|Any CPU.Build.0 = Debug NET40|Any CPU
+		{058F123E-D366-4023-94EF-E4AF8EC5D101}.Release NET20|Any CPU.ActiveCfg = Release NET20|Any CPU
+		{058F123E-D366-4023-94EF-E4AF8EC5D101}.Release NET20|Any CPU.Build.0 = Release NET20|Any CPU
+		{058F123E-D366-4023-94EF-E4AF8EC5D101}.Release NET40|Any CPU.ActiveCfg = Release NET40|Any CPU
+		{058F123E-D366-4023-94EF-E4AF8EC5D101}.Release NET40|Any CPU.Build.0 = Release NET40|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7CEC5A9C-75F7-47AF-9C1F-936CC4A5F535}
+	EndGlobalSection
+EndGlobal
