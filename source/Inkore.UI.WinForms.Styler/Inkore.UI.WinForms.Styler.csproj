@@ -1,394 +1,67 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
-  <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.30729</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{058F123E-D366-4023-94EF-E4AF8EC5D101}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Inkore.UI.WinForms.Styler</RootNamespace>
-    <AssemblyName>Inkore.UI.WinForms.Styler</AssemblyName>
-    <SccProjectName>
-    </SccProjectName>
-    <SccLocalPath>
-    </SccLocalPath>
-    <SccAuxPath>
-    </SccAuxPath>
-    <SccProvider>
-    </SccProvider>
-    <FileUpgradeFlags>
-    </FileUpgradeFlags>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
-    <TargetFrameworkProfile>
-    </TargetFrameworkProfile>
-    <UpgradeBackupLocation>
-    </UpgradeBackupLocation>
-    <PublishUrl>publish\</PublishUrl>
-    <Install>true</Install>
-    <InstallFrom>Disk</InstallFrom>
-    <UpdateEnabled>false</UpdateEnabled>
-    <UpdateMode>Foreground</UpdateMode>
-    <UpdateInterval>7</UpdateInterval>
-    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
-    <UpdatePeriodically>false</UpdatePeriodically>
-    <UpdateRequired>false</UpdateRequired>
-    <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>0</ApplicationRevision>
-    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
-    <UseApplicationTrust>false</UseApplicationTrust>
-    <BootstrapperEnabled>true</BootstrapperEnabled>
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release NET20|AnyCPU' ">
-    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
-    <TargetFrameworkProfile>
-    </TargetFrameworkProfile>
-    <OutputPath>bin\Release NET20\</OutputPath>
-    <DefineConstants>DEBUG;TRACE;NET20</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <DocumentationFile>WindowsFormsAero.xml</DocumentationFile>
-    <Prefer32Bit>false</Prefer32Bit>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release NET40|AnyCPU' ">
-    <OutputPath>bin\Release NET40\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <DocumentationFile>bin\Release NET40\Inkore.UI.WinForms.Styler.xml</DocumentationFile>
-    <NoWarn>1591,1574,1573,1572,1584,1658,0108</NoWarn>
-    <Prefer32Bit>false</Prefer32Bit>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug NET40|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug NET40\</OutputPath>
-    <DefineConstants>TRACE;NET40</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <DocumentationFile>WindowsFormsAero.xml</DocumentationFile>
-    <Prefer32Bit>false</Prefer32Bit>
-  </PropertyGroup>
-  <ItemGroup>
-    <Reference Include="System" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Design" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Security" />
-    <Reference Include="System.Windows.Forms" />
-    <Reference Include="System.Xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="AeroForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Controls\AdvButton.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Controls\AdvComboBox.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Controls\CommandLink.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Controls\ControlDesignerBase.cs" />
-    <Compile Include="Controls\DesignerActionListBase.cs" />
-    <Compile Include="Controls\CommandArrow.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Controls\AdvListView.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Controls\HeaderlessTabControl.cs" />
-    <Compile Include="Controls\HeaderlessTabPage.cs" />
-    <Compile Include="Controls\HeaderlessTabPageCollection.cs" />
-    <Compile Include="Controls\HotkeyBox.cs" />
-    <Compile Include="Controls\Rebar\BandCollection.cs" />
-    <Compile Include="Controls\Rebar\BandCollectionEditor.cs" />
-    <Compile Include="Controls\Rebar\BandDesigner.cs" />
-    <Compile Include="Controls\Rebar\BandWrapper.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Controls\Rebar\RebarDesigner.cs" />
-    <Compile Include="Controls\Rebar\RebarWrapper.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Controls\Rebar\Utilities\ComCtl32Dll.cs" />
-    <Compile Include="Controls\Rebar\Utilities\Gdi32Dll.cs" />
-    <Compile Include="Controls\Rebar\Utilities\Kernel32Dll.cs" />
-    <Compile Include="Controls\Rebar\Utilities\RebarStructs.cs" />
-    <Compile Include="Controls\Rebar\Utilities\User32Dll.cs" />
-    <Compile Include="Controls\Rebar\Utilities\WindowsConstants.cs" />
-    <Compile Include="Controls\Rebar\Utilities\WindowsMessages.cs" />
-    <Compile Include="Controls\StylePanel.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="GenericExtensions.cs" />
-    <Compile Include="ToolStripAeroRenderer.cs" />
-    <Compile Include="Controls\DragDropSign.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Controls\WindowFrame.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Controls\WindowControlButton.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Controls\TooltipBoxButton.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Controls\NavigationButton.cs" />
-    <Compile Include="Controls\NavigationButtonDesigner.cs" />
-    <Compile Include="Controls\RadioButtonGroup.cs" />
-    <Compile Include="Controls\Seperator.cs" />
-    <Compile Include="Controls\TabStrip.cs" />
-    <Compile Include="Controls\AdvTabControl.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Controls\AdvTabControl.NativeUpDown.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Controls\VisibleSplitContainer.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Design\SearchTextBoxDesigner.cs" />
-    <Compile Include="Dialogs\AdditionalVisualStyleElements.cs" />
-    <Compile Include="Dialogs\AnimationResource.cs" />
-    <Compile Include="Dialogs\ButtonType.cs" />
-    <Compile Include="Dialogs\ComCtlv6ActivationContext.cs" />
-    <Compile Include="Dialogs\CredentialDialog.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Dialogs\CredentialException.cs" />
-    <Compile Include="Dialogs\DialogHelper.cs" />
-    <Compile Include="Dialogs\DownlevelTextMode.cs" />
-    <Compile Include="Dialogs\ExpandButtonClickedEventArgs.cs" />
-    <Compile Include="Dialogs\ExtendedForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dialogs\Glass.cs" />
-    <Compile Include="Dialogs\GlobalSuppressions.cs" />
-    <Compile Include="Dialogs\HyperlinkClickedEventArgs.cs" />
-    <Compile Include="Dialogs\Interop\ComDlgResources.cs" />
-    <Compile Include="Dialogs\Interop\COMGuids.cs" />
-    <Compile Include="Dialogs\Interop\HRESULT.cs" />
-    <Compile Include="Dialogs\Interop\IProgressDialog.cs" />
-    <Compile Include="Dialogs\Interop\ShellComInterfaces.cs" />
-    <Compile Include="Dialogs\Interop\ShellWrapperDefinitions.cs" />
-    <Compile Include="Dialogs\Interop\Win32Resources.cs" />
-    <Compile Include="Dialogs\Interop\WindowHandleWrapper.cs" />
-    <Compile Include="Dialogs\NativeMethods.cs" />
-    <Compile Include="Dialogs\OkButtonClickedEventArgs.cs" />
-    <Compile Include="Dialogs\ProgressBarState.cs" />
-    <Compile Include="Dialogs\ProgressBarStyle.cs" />
-    <Compile Include="Dialogs\ProgressDialog.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Dialogs\SafeHandles.cs" />
-    <Compile Include="Dialogs\ShellAboutDialog.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Dialogs\ShellAnimation.cs" />
-    <Compile Include="Dialogs\TaskDialog.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Dialogs\TaskDialogButton.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Dialogs\TaskDialogButtonStyle.cs" />
-    <Compile Include="Dialogs\TaskDialogIcon.cs" />
-    <Compile Include="Dialogs\TaskDialogItem.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Dialogs\TaskDialogItemClickedEventArgs.cs" />
-    <Compile Include="Dialogs\TaskDialogItemCollection.cs" />
-    <Compile Include="Dialogs\TaskDialogRadioButton.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Dialogs\TimerEventArgs.cs" />
-    <Compile Include="Dialogs\VistaFileDialog.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Dialogs\VistaFileDialogEvents.cs" />
-    <Compile Include="Dialogs\VistaFolderBrowserDialog.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Dialogs\VistaOpenFileDialog.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Dialogs\VistaSaveFileDialog.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Dwm\DwmCompositionException.cs" />
-    <Compile Include="Dwm\DwmManager.cs" />
-    <Compile Include="Dwm\Flip3dPolicy.cs" />
-    <Compile Include="Dwm\GlassHelper.cs" />
-    <Compile Include="Dwm\GlassForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dwm\Margins.cs" />
-    <Compile Include="Dwm\NativeMethods.cs" />
-    <Compile Include="Dwm\Thumbnail.cs" />
-    <Compile Include="Dwm\ThumbnailViewer.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Controls\HorizontalPanel.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Controls\LabeledDivider.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="GdiMemoryContext.cs" />
-    <Compile Include="Native\Bitmap.cs" />
-    <Compile Include="Native\GDI.cs" />
-    <Compile Include="Native\IntHelpers.cs" />
-    <Compile Include="Native\Messaging.cs" />
-    <Compile Include="Native\POINT.cs" />
-    <Compile Include="Native\RECT.cs" />
-    <Compile Include="Native\Windows.cs" />
-    <Compile Include="Native\WindowStyle.cs" />
-    <Compile Include="Native\WindowTheme.cs" />
-    <Compile Include="OsSupport.cs" />
-    <Compile Include="Controls\AdvProgressbar.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Properties\Resources.Designer.cs" />
-    <Compile Include="Resources\ExceptionMessages.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ExceptionMessages.resx</DependentUpon>
-    </Compile>
-    <Compile Include="Resources\Pictures.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Pictures.resx</DependentUpon>
-    </Compile>
-    <Compile Include="Controls\SearchTextBox.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Controls\SearchTextBox.designer.cs">
-      <DependentUpon>SearchTextBox.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Controls\SplitButton.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Controls\AdvTextBox.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="TaskDialog\CommonButton.cs" />
-    <Compile Include="TaskDialog\CommonButtonResult.cs" />
-    <Compile Include="TaskDialog\CommonIcon.cs" />
-    <Compile Include="TaskDialog\CustomButton.cs" />
-    <Compile Include="TaskDialog\EventArgs.cs" />
-    <Compile Include="TaskDialog\Message.cs" />
-    <Compile Include="TaskDialog\NativeMethods.cs" />
-    <Compile Include="TaskDialog\Results.cs" />
-    <Compile Include="TaskDialog\TaskDialog.cs" />
-    <Compile Include="TaskDialog\TaskDialogButton.cs" />
-    <Compile Include="TaskDialog\TaskDialogIcon.cs" />
-    <Compile Include="TaskDialog\TaskDialog_static.cs" />
-    <Compile Include="ThemeText\NativeMethods.cs" />
-    <Compile Include="ThemeText\Options\BorderOption.cs" />
-    <Compile Include="ThemeText\Options\GlowOption.cs" />
-    <Compile Include="ThemeText\Options\IThemeTextOption.cs" />
-    <Compile Include="ThemeText\Options\OverlayOption.cs" />
-    <Compile Include="ThemeText\Options\ShadowOption.cs" />
-    <Compile Include="ThemeText\ThemedLabel.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="ThemeText\ThemedText.cs" />
-    <Compile Include="ThemeText\ThemedTextCreate.cs" />
-    <Compile Include="Controls\AdvTreeView.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="NativeMethods.cs" />
-    <Compile Include="Controls\VerticalPanel.cs">
-      <SubType>Component</SubType>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
-      <Visible>False</Visible>
-      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
-      <Install>false</Install>
-    </BootstrapperPackage>
-    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
-      <Visible>False</Visible>
-      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
-      <Install>false</Install>
-    </BootstrapperPackage>
-    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
-      <Visible>False</Visible>
-      <ProductName>.NET Framework 3.5</ProductName>
-      <Install>true</Install>
-    </BootstrapperPackage>
-    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
-      <Visible>False</Visible>
-      <ProductName>Windows Installer 3.1</ProductName>
-      <Install>true</Install>
-    </BootstrapperPackage>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="AeroForm.resx">
-      <DependentUpon>AeroForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Controls\Rebar\BandCollectionEditor.resx">
-      <DependentUpon>BandCollectionEditor.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Controls\Rebar\BandWrapper.resx">
-      <DependentUpon>BandWrapper.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Controls\Rebar\RebarWrapper.resx">
-      <DependentUpon>RebarWrapper.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Dialogs\ExtendedForm.resx">
-      <DependentUpon>ExtendedForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Properties\Resources.resx" />
-    <EmbeddedResource Include="Resources\ThemedLabel.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Resources\ExceptionMessages.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>ExceptionMessages.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Resources\Pictures.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Pictures.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Resources\ThemedLabel.bmp" />
-    <EmbeddedResource Include="Controls\SearchTextBox.resx">
-      <DependentUpon>SearchTextBox.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup />
-  <ItemGroup>
-    <Content Include="Controls\HeaderlessTabControl.bmp" />
-    <Content Include="Controls\NavigationButton.bmp" />
-    <Content Include="Controls\Rebar\CoolBar.ico" />
-    <Content Include="Controls\Seperator.bmp" />
-    <Content Include="Dialogs\CustomDictionary.xml" />
-    <Content Include="Dialogs\ProgressDialog.bmp" />
-    <Content Include="Dialogs\TaskDialog.bmp" />
-  </ItemGroup>
-  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+	<PropertyGroup>
+		<TargetFrameworks>net6.0-windows10.0.18362.0;net452</TargetFrameworks>
+		<UseWPF>true</UseWPF>
+		<UseWinRT>true</UseWinRT>
+		<NeutralLanguage>en-US</NeutralLanguage>
+		<NoWarn>1701;1702;1573;1591;CA1416;SYSLIB0003;SYSLIB0004</NoWarn>
+		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+		<OutputType>Library</OutputType>
+		<MapFileExtensions>true</MapFileExtensions>
+		<UseApplicationTrust>false</UseApplicationTrust>
+		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+		<UseWindowsForms>true</UseWindowsForms>
+		<ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
+		<AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+	</PropertyGroup>
+	<ItemGroup Condition="'$(TargetFrameworkIdentifier)' == '.NETFramework'">
+		<Reference Include="System.Design" />
+		<Reference Include="System.Security" />
+	</ItemGroup>
+	<ItemGroup>
+		<Compile Update="ThemeText\ThemedLabel.cs">
+			<SubType>Component</SubType>
+		</Compile>
+	</ItemGroup>
+	<ItemGroup>
+		<BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+			<Visible>False</Visible>
+			<ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+			<Install>false</Install>
+		</BootstrapperPackage>
+		<BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+			<Visible>False</Visible>
+			<ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+			<Install>false</Install>
+		</BootstrapperPackage>
+		<BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+			<Visible>False</Visible>
+			<ProductName>.NET Framework 3.5</ProductName>
+			<Install>true</Install>
+		</BootstrapperPackage>
+		<BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+			<Visible>False</Visible>
+			<ProductName>Windows Installer 3.1</ProductName>
+			<Install>true</Install>
+		</BootstrapperPackage>
+	</ItemGroup>
+	<ItemGroup>
+		<EmbeddedResource Include="Resources\ThemedLabel.png" />
+	</ItemGroup>
+	<ItemGroup>
+		<EmbeddedResource Include="Resources\ThemedLabel.bmp" />
+	</ItemGroup>
+	<ItemGroup>
+		<Content Include="Controls\HeaderlessTabControl.bmp" />
+		<Content Include="Controls\NavigationButton.bmp" />
+		<Content Include="Controls\Rebar\CoolBar.ico" />
+		<Content Include="Controls\Seperator.bmp" />
+		<Content Include="Dialogs\CustomDictionary.xml" />
+		<Content Include="Dialogs\ProgressDialog.bmp" />
+		<Content Include="Dialogs\TaskDialog.bmp" />
+	</ItemGroup>
+	<ItemGroup>
+		<Compile Remove="Controls\NativeToolStrip.cs" />
+		<Compile Remove="Controls\StyleButton2.cs" />
+	</ItemGroup>
 </Project>

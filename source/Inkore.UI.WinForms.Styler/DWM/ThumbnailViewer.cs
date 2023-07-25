@@ -49,7 +49,7 @@ namespace Inkore.UI.WinForms.Styler.Dwm {
 
 		/// <summary>Forces and update of the thumbnail.</summary>
 		/// <remarks>Use this method if you know that the thumbnailed window has been resized and the thumbnail control should react to these changes.</remarks>
-		public void Update() {
+		public new void Update() {
 			UpdateThumbnail(Visible);
 		}
 

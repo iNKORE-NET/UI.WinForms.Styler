@@ -48,18 +48,17 @@ namespace Inkore.UI.WinForms.Styler.Controls {
 		}
 
 		protected virtual void OnSplitClick(SplitMenuEventArgs e) {
-			//Raise opening event before opening any menu
-			if (SplitMenuOpening != null &&
-				(SplitMenu != null || SplitMenuStrip != null))
-				SplitMenuOpening(this, e);
+            //Raise opening event before opening any menu
+            //if (SplitMenuOpening != null &&
+            //	(SplitMenu != null || SplitMenuStrip != null))
+            //	SplitMenuOpening(this, e);
+            if (SplitMenuOpening != null && SplitMenuStrip != null)
+                SplitMenuOpening(this, e);
 
-			Point pos = new Point(e.DrawArea.Left, e.DrawArea.Bottom);
+            Point pos = new Point(e.DrawArea.Left, e.DrawArea.Bottom);
 
 			if (!e.PreventOpening) {
-				if (SplitMenu != null) {
-					SplitMenu.Show(this, pos);
-				}
-				else if (SplitMenuStrip != null) {
+			 if (SplitMenuStrip != null) {
 					SplitMenuStrip.Width = e.DrawArea.Width;
 					SplitMenuStrip.Show(this, pos);
 				}
@@ -75,10 +74,10 @@ namespace Inkore.UI.WinForms.Styler.Controls {
 		[Description("Sets the context menu that is displayed by clicking on the split button."), Category("Behavior"), DefaultValue(null)]
 		public ContextMenuStrip SplitMenuStrip { get; set; }
 
-		/// <summary>Gets or sets the associated context menu that is displayed when the split
-		/// glyph of the button is clicked. Exposed for backward compatibility.</summary>
-		[Description("Sets the context menu that is displayed by clicking on the split button."), Category("Behavior"), DefaultValue(null)]
-		public ContextMenu SplitMenu { get; set; }
+		///// <summary>Gets or sets the associated context menu that is displayed when the split
+		///// glyph of the button is clicked. Exposed for backward compatibility.</summary>
+		//[Description("Sets the context menu that is displayed by clicking on the split button."), Category("Behavior"), DefaultValue(null)]
+		//public ContextMenu SplitMenu { get; set; }
 
 		#endregion
 
