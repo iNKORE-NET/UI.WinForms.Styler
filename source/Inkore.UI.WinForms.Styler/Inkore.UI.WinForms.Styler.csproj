@@ -19,7 +19,7 @@
 		<Reference Include="System.Security" />
 	</ItemGroup>
 	<ItemGroup>
-		<Compile Update="ThemeText\ThemedLabel.cs">
+		<Compile Update="Controls\ThemeText\ThemedLabel.cs">
 			<SubType>Component</SubType>
 		</Compile>
 	</ItemGroup>

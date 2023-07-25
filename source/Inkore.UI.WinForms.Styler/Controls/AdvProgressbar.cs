@@ -6,7 +6,7 @@ using System.Windows.Forms;
 namespace Inkore.UI.WinForms.Styler.Controls
 {
     [ToolboxBitmap(typeof(ProgressBar))]
-    public class AdvProgressBar:System.Windows.Forms.ProgressBar
+    public class AdvProgressBar : System.Windows.Forms.ProgressBar
     {
         public AdvProgressBar()
         {
@@ -24,9 +24,9 @@ namespace Inkore.UI.WinForms.Styler.Controls
             }
         }
 
-        private AdvProgressStates ps_ = AdvProgressStates.Normal;
-        [Description("Gets or sets the ProgressBar state."), Category("Appearance"), DefaultValue(AdvProgressStates.Normal)]
-        public AdvProgressStates ProgressState
+        private AdvProgressBarState ps_ = AdvProgressBarState.Normal;
+        [Description("Gets or sets the ProgressBar state."), Category("Appearance"), DefaultValue(AdvProgressBarState.Normal)]
+        public AdvProgressBarState ProgressState
         {
             get
             {
@@ -39,19 +39,19 @@ namespace Inkore.UI.WinForms.Styler.Controls
             }
         }
 
-        public void SetState(AdvProgressStates State)
+        public void SetState(AdvProgressBarState State)
         {
             NativeMethods.SendMessage(this.Handle, NativeMethods.PBM_SETSTATE, NativeMethods.PBST_NORMAL, 0);
             //above required for values to be updated properly, but causes a slight flicker
             switch (State)
             {
-                case AdvProgressStates.Normal:
+                case AdvProgressBarState.Normal:
                     NativeMethods.SendMessage(this.Handle, NativeMethods.PBM_SETSTATE, NativeMethods.PBST_NORMAL, 0);
                     break;
-                case AdvProgressStates.Error:
+                case AdvProgressBarState.Error:
                     NativeMethods.SendMessage(this.Handle, NativeMethods.PBM_SETSTATE, NativeMethods.PBST_ERROR, 0);
                     break;
-                case AdvProgressStates.Paused:
+                case AdvProgressBarState.Paused:
                     NativeMethods.SendMessage(this.Handle, NativeMethods.PBM_SETSTATE, NativeMethods.PBST_PAUSED, 0);
                     break;
                 //case States.Partial:
@@ -77,7 +77,7 @@ namespace Inkore.UI.WinForms.Styler.Controls
             base.WndProc(ref m);
         }
     }
-    public enum AdvProgressStates
+    public enum AdvProgressBarState
     {
         Normal, Error, Paused
     }
