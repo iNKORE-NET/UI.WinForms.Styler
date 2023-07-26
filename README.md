@@ -1,5 +1,6 @@
-# SeaSharp.Styler
-A powerful util for making fantastic WinForm styles
+# Styler
+About
+A Windows Forms library that provides native controls with many of the advanced features.
 
 # Controls
 - AeroForm
