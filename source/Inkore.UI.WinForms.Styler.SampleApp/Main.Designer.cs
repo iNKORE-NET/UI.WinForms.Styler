@@ -217,11 +217,11 @@ namespace Inkore.UI.WinForms.Styler.Showcase
             // 
             // themedLabel2
             // 
-            themedLabel2.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            themedLabel2.Location = new Point(0, 483);
+            themedLabel2.Dock = DockStyle.Bottom;
+            themedLabel2.Location = new Point(0, 507);
             themedLabel2.Name = "themedLabel2";
             themedLabel2.Padding = new Padding(0, 0, 7, 8);
-            themedLabel2.Size = new Size(707, 36);
+            themedLabel2.Size = new Size(710, 36);
             themedLabel2.TabIndex = 26;
             themedLabel2.Text = "Welcome! Take a look around.";
             themedLabel2.TextAlign = HorizontalAlignment.Center;
@@ -234,7 +234,7 @@ namespace Inkore.UI.WinForms.Styler.Showcase
             themedLabel1.Location = new Point(49, -1);
             themedLabel1.Name = "themedLabel1";
             themedLabel1.Padding = new Padding(9, 0, 0, 0);
-            themedLabel1.Size = new Size(449, 57);
+            themedLabel1.Size = new Size(451, 57);
             themedLabel1.TabIndex = 25;
             themedLabel1.Text = "iNKORE.UI.WinForms.Styler";
             themedLabel1.TextAlignVertical = System.Windows.Forms.VisualStyles.VerticalAlignment.Center;
@@ -249,7 +249,7 @@ namespace Inkore.UI.WinForms.Styler.Showcase
             tabControl1.Location = new Point(5, 67);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(699, 408);
+            tabControl1.Size = new Size(699, 434);
             tabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -264,7 +264,7 @@ namespace Inkore.UI.WinForms.Styler.Showcase
             tabPage1.Location = new Point(4, 26);
             tabPage1.Name = "tabPage1";
             tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(691, 378);
+            tabPage1.Size = new Size(691, 404);
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Basic Controls";
             tabPage1.UseVisualStyleBackColor = true;
@@ -275,7 +275,7 @@ namespace Inkore.UI.WinForms.Styler.Showcase
             stylePanel2.BackColor = Color.Transparent;
             stylePanel2.Controls.Add(button3);
             stylePanel2.Controls.Add(advComboBox1);
-            stylePanel2.Location = new Point(112, 305);
+            stylePanel2.Location = new Point(112, 318);
             stylePanel2.Name = "stylePanel2";
             stylePanel2.Size = new Size(466, 51);
             stylePanel2.TabIndex = 12;
@@ -320,7 +320,7 @@ namespace Inkore.UI.WinForms.Styler.Showcase
             stylePanel1.Controls.Add(commandLink1);
             stylePanel1.Controls.Add(commandLink2);
             stylePanel1.Controls.Add(button1);
-            stylePanel1.Location = new Point(112, 39);
+            stylePanel1.Location = new Point(112, 52);
             stylePanel1.Name = "stylePanel1";
             stylePanel1.Size = new Size(466, 260);
             stylePanel1.TabIndex = 11;
@@ -475,7 +475,7 @@ namespace Inkore.UI.WinForms.Styler.Showcase
             // 
             commandLink4.Anchor = AnchorStyles.None;
             commandLink4.FlatStyle = FlatStyle.System;
-            commandLink4.Location = new Point(281, -2);
+            commandLink4.Location = new Point(281, 11);
             commandLink4.Name = "commandLink4";
             commandLink4.Size = new Size(225, 47);
             commandLink4.TabIndex = 5;
@@ -488,7 +488,7 @@ namespace Inkore.UI.WinForms.Styler.Showcase
             // 
             commandLink3.Anchor = AnchorStyles.None;
             commandLink3.FlatStyle = FlatStyle.System;
-            commandLink3.Location = new Point(40, -2);
+            commandLink3.Location = new Point(40, 11);
             commandLink3.Name = "commandLink3";
             commandLink3.Size = new Size(224, 49);
             commandLink3.TabIndex = 4;
@@ -507,7 +507,7 @@ namespace Inkore.UI.WinForms.Styler.Showcase
             tabPage4.Location = new Point(4, 26);
             tabPage4.Name = "tabPage4";
             tabPage4.Padding = new Padding(3);
-            tabPage4.Size = new Size(691, 378);
+            tabPage4.Size = new Size(691, 404);
             tabPage4.TabIndex = 3;
             tabPage4.Text = "Data controls";
             tabPage4.UseVisualStyleBackColor = true;
@@ -633,7 +633,7 @@ namespace Inkore.UI.WinForms.Styler.Showcase
             treeView1.SelectedImageIndex = 0;
             treeView1.ShowHScroll = false;
             treeView1.ShowLines = false;
-            treeView1.Size = new Size(135, 321);
+            treeView1.Size = new Size(135, 347);
             treeView1.TabIndex = 4;
             // 
             // label1
@@ -767,7 +767,7 @@ namespace Inkore.UI.WinForms.Styler.Showcase
             treeView2.Nodes.AddRange(new TreeNode[] { treeNode43, treeNode44, treeNode51, treeNode62, treeNode63, treeNode73, treeNode83, treeNode84 });
             treeView2.SelectedImageIndex = 0;
             treeView2.ShowLines = false;
-            treeView2.Size = new Size(135, 321);
+            treeView2.Size = new Size(135, 347);
             treeView2.TabIndex = 6;
             // 
             // listView1
@@ -777,7 +777,7 @@ namespace Inkore.UI.WinForms.Styler.Showcase
             listView1.LargeImageList = imageList2;
             listView1.Location = new Point(288, 6);
             listView1.Name = "listView1";
-            listView1.Size = new Size(397, 321);
+            listView1.Size = new Size(397, 347);
             listView1.SmallImageList = imageList1;
             listView1.TabIndex = 5;
             listView1.UseCompatibleStateImageBehavior = false;
@@ -817,7 +817,7 @@ namespace Inkore.UI.WinForms.Styler.Showcase
             tabPage5.Location = new Point(4, 26);
             tabPage5.Name = "tabPage5";
             tabPage5.Padding = new Padding(3);
-            tabPage5.Size = new Size(691, 378);
+            tabPage5.Size = new Size(691, 404);
             tabPage5.TabIndex = 4;
             tabPage5.Text = "DWM";
             tabPage5.UseVisualStyleBackColor = true;
@@ -848,7 +848,7 @@ namespace Inkore.UI.WinForms.Styler.Showcase
             tabPage2.Location = new Point(4, 26);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new Padding(10);
-            tabPage2.Size = new Size(691, 378);
+            tabPage2.Size = new Size(691, 404);
             tabPage2.TabIndex = 5;
             tabPage2.Text = "Rebar";
             tabPage2.UseVisualStyleBackColor = true;
@@ -865,7 +865,7 @@ namespace Inkore.UI.WinForms.Styler.Showcase
             panel1.Dock = DockStyle.Fill;
             panel1.Location = new Point(10, 10);
             panel1.Name = "panel1";
-            panel1.Size = new Size(671, 358);
+            panel1.Size = new Size(671, 384);
             panel1.TabIndex = 1;
             // 
             // richTextBox1
@@ -874,7 +874,7 @@ namespace Inkore.UI.WinForms.Styler.Showcase
             richTextBox1.Dock = DockStyle.Fill;
             richTextBox1.Location = new Point(0, 0);
             richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(667, 354);
+            richTextBox1.Size = new Size(667, 380);
             richTextBox1.TabIndex = 5;
             richTextBox1.Text = "Windows Native Rebar Sample!";
             // 
@@ -1061,7 +1061,7 @@ namespace Inkore.UI.WinForms.Styler.Showcase
             // 
             navigationButton2.Anchor = AnchorStyles.Right;
             navigationButton2.BackColor = Color.Black;
-            navigationButton2.Location = new Point(666, 14);
+            navigationButton2.Location = new Point(668, 14);
             navigationButton2.Name = "navigationButton2";
             navigationButton2.Size = new Size(30, 30);
             navigationButton2.TabIndex = 28;
@@ -1077,23 +1077,23 @@ namespace Inkore.UI.WinForms.Styler.Showcase
             Panel_TopNavArea.Dock = DockStyle.Top;
             Panel_TopNavArea.Location = new Point(0, 0);
             Panel_TopNavArea.Name = "Panel_TopNavArea";
-            Panel_TopNavArea.Size = new Size(708, 60);
+            Panel_TopNavArea.Size = new Size(710, 60);
             Panel_TopNavArea.TabIndex = 29;
             // 
             // Main
             // 
             AutoScaleDimensions = new SizeF(96F, 96F);
             AutoScaleMode = AutoScaleMode.Dpi;
-            ClientSize = new Size(708, 518);
+            ClientSize = new Size(710, 543);
             Controls.Add(Panel_TopNavArea);
             Controls.Add(tabControl1);
             Controls.Add(themedLabel2);
-            MainMenuStrip = menuStrip1;
+            HideTitle = true;
             Margin = new Padding(2);
             MinimumSize = new Size(653, 432);
             Name = "Main";
-            SizeGripStyle = SizeGripStyle.Hide;
-            Text = "Windows Forms Aero";
+            SizeGripStyle = SizeGripStyle.Show;
+            Text = "iNKORE.UI.WinForms.Styler";
             tabControl1.ResumeLayout(false);
             tabPage1.ResumeLayout(false);
             stylePanel2.ResumeLayout(false);

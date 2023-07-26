@@ -64,6 +64,8 @@ namespace Inkore.UI.WinForms.Styler.Showcase
                 Caption = "Search",
                 GripSettings = GripperSettings.Always
             });
+
+            advComboBox1.SelectedIndex = 0;
         }
 
         protected override void OnShown(EventArgs e)
@@ -228,7 +230,7 @@ namespace Inkore.UI.WinForms.Styler.Showcase
                     dialog.MainInstruction = "This is an example task dialog.";
                     dialog.Content = "Task dialogs are a more flexible type of message box. Among other things, task dialogs support custom buttons, command links, scroll bars, expandable sections, radio buttons, a check box (useful for e.g. \"don't show this again\"), custom icons, and a footer. Some of those things are demonstrated here.";
                     dialog.ExpandedInformation = "Ookii.org's Task Dialog doesn't just provide a wrapper for the native Task Dialog API; it is designed to provide a programming interface that is natural to .Net developers.";
-                    dialog.Footer = "Task Dialogs support footers and can even include <a href=\"http://www.ookii.org\">hyperlinks</a>.";
+                    dialog.Footer = "Task Dialogs support footers and can even include <a href=\"https://github.com/InkoreStudios/UI.WinForms.Styler\">hyperlinks</a>.";
                     dialog.FooterIcon = TaskDialogIcon.Information;
                     dialog.EnableHyperlinks = true;
                     TaskDialogButton customButton = new TaskDialogButton("A custom button");

@@ -17,7 +17,6 @@ using System.ComponentModel;
 using Inkore.UI.WinForms.Styler.Controls.ThemeText.Options;
 using System.Windows.Forms.VisualStyles;
 using Inkore.UI.WinForms.Styler.ThemeText;
-using Inkore.UI.WinForms.Styler.Controls.ThemeText.Options;
 
 namespace Inkore.UI.WinForms.Styler.Controls.ThemeText
 {
