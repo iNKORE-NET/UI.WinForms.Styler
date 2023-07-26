@@ -124,65 +124,78 @@ namespace Inkore.UI.WinForms.Styler.Showcase
             themedLabel1 = new Controls.ThemeText.ThemedLabel();
             tabControl1 = new TabControl();
             tabPage1 = new TabPage();
-            flowLayoutPanel1 = new FlowLayoutPanel();
-            button1 = new Controls.AdvButton();
-            splitButton2 = new Controls.SplitButton();
+            stylePanel2 = new Controls.StylePanel();
+            button3 = new Button();
+            advComboBox1 = new Controls.AdvComboBox();
+            stylePanel1 = new Controls.StylePanel();
+            progressBar1 = new Controls.AdvProgressBar();
+            textBox1 = new Controls.AdvTextBox();
+            progressBar4 = new Controls.AdvProgressBar();
+            textBox2 = new Controls.AdvTextBox();
+            progressBar3 = new Controls.AdvProgressBar();
+            comboBox1 = new Controls.AdvComboBox();
+            progressBar2 = new Controls.AdvProgressBar();
+            splitButton1 = new Controls.SplitButton();
             contextMenu1 = new ContextMenuStrip(components);
             menuItem3 = new ToolStripMenuItem();
             menuItem1 = new ToolStripMenuItem();
             menuItem2 = new ToolStripMenuItem();
-            splitButton1 = new Controls.SplitButton();
+            splitButton2 = new Controls.SplitButton();
             commandLink1 = new Controls.CommandLink();
             commandLink2 = new Controls.CommandLink();
-            commandLink3 = new Controls.CommandLink();
+            button1 = new Controls.AdvButton();
             commandLink4 = new Controls.CommandLink();
-            tabPage2 = new TabPage();
-            flowLayoutPanel2 = new FlowLayoutPanel();
-            progressBar1 = new Controls.AdvProgressBar();
-            progressBar2 = new Controls.AdvProgressBar();
-            progressBar3 = new Controls.AdvProgressBar();
-            progressBar4 = new Controls.AdvProgressBar();
-            tabPage3 = new TabPage();
-            flowLayoutPanel4 = new FlowLayoutPanel();
-            button2 = new Button();
-            button11 = new Button();
-            button3 = new Button();
-            button8 = new Button();
-            button4 = new Button();
-            button5 = new Button();
-            button6 = new Button();
-            button7 = new Button();
-            button10 = new Button();
-            button9 = new Button();
+            commandLink3 = new Controls.CommandLink();
             tabPage4 = new TabPage();
-            flowLayoutPanel3 = new FlowLayoutPanel();
-            textBox1 = new Controls.AdvTextBox();
-            textBox2 = new Controls.AdvTextBox();
-            comboBox1 = new Controls.AdvComboBox();
             treeView1 = new Controls.AdvTreeView();
             label1 = new Label();
             treeView2 = new TreeView();
-            label2 = new Label();
             listView1 = new Controls.AdvListView();
             imageList2 = new ImageList(components);
+            label2 = new Label();
             tabPage5 = new TabPage();
+            button2 = new Button();
             thumbnailViewer1 = new Dwm.ThumbnailViewer();
-            tabPage6 = new TabPage();
-            labelVDesktopId = new Label();
-            labelVDesktopCurrent = new Label();
-            buttonVDesktop = new Controls.AdvButton();
+            tabPage2 = new TabPage();
+            panel1 = new Panel();
+            richTextBox1 = new RichTextBox();
+            searchTextBox1 = new Controls.SearchTextBox();
+            advTextBox1 = new Controls.AdvTextBox();
+            toolStrip1 = new ToolStrip();
+            toolStripButton1 = new ToolStripButton();
+            toolStripButton2 = new ToolStripButton();
+            toolStripButton3 = new ToolStripButton();
+            toolStripLabel1 = new ToolStripLabel();
+            toolStripSplitButton1 = new ToolStripSplitButton();
+            toolStripDropDownButton1 = new ToolStripDropDownButton();
+            toolStripProgressBar1 = new ToolStripProgressBar();
+            toolStripTextBox1 = new ToolStripTextBox();
+            toolStripComboBox1 = new ToolStripComboBox();
+            menuStrip1 = new MenuStrip();
+            fileToolStripMenuItem = new ToolStripMenuItem();
+            newToolStripMenuItem = new ToolStripMenuItem();
+            editToolStripMenuItem = new ToolStripMenuItem();
+            undoToolStripMenuItem = new ToolStripMenuItem();
+            viewToolStripMenuItem = new ToolStripMenuItem();
+            toolsToolStripMenuItem = new ToolStripMenuItem();
+            windowToolStripMenuItem = new ToolStripMenuItem();
+            helpToolStripMenuItem = new ToolStripMenuItem();
+            rebarWrapper1 = new Controls.Rebar.RebarWrapper();
+            navigationButton1 = new Controls.NavigationButton();
+            navigationButton2 = new Controls.NavigationButton();
+            Panel_TopNavArea = new Panel();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
-            flowLayoutPanel1.SuspendLayout();
+            stylePanel2.SuspendLayout();
+            stylePanel1.SuspendLayout();
             contextMenu1.SuspendLayout();
-            tabPage2.SuspendLayout();
-            flowLayoutPanel2.SuspendLayout();
-            tabPage3.SuspendLayout();
-            flowLayoutPanel4.SuspendLayout();
             tabPage4.SuspendLayout();
-            flowLayoutPanel3.SuspendLayout();
             tabPage5.SuspendLayout();
-            tabPage6.SuspendLayout();
+            tabPage2.SuspendLayout();
+            panel1.SuspendLayout();
+            toolStrip1.SuspendLayout();
+            menuStrip1.SuspendLayout();
+            Panel_TopNavArea.SuspendLayout();
             SuspendLayout();
             // 
             // imageList1
@@ -205,11 +218,10 @@ namespace Inkore.UI.WinForms.Styler.Showcase
             // themedLabel2
             // 
             themedLabel2.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            themedLabel2.Location = new Point(0, 698);
-            themedLabel2.Margin = new Padding(4, 5, 4, 5);
+            themedLabel2.Location = new Point(0, 483);
             themedLabel2.Name = "themedLabel2";
-            themedLabel2.Padding = new Padding(0, 0, 10, 12);
-            themedLabel2.Size = new Size(998, 54);
+            themedLabel2.Padding = new Padding(0, 0, 7, 8);
+            themedLabel2.Size = new Size(707, 36);
             themedLabel2.TabIndex = 26;
             themedLabel2.Text = "Welcome! Take a look around.";
             themedLabel2.TextAlign = HorizontalAlignment.Center;
@@ -217,430 +229,144 @@ namespace Inkore.UI.WinForms.Styler.Showcase
             // 
             // themedLabel1
             // 
-            themedLabel1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            themedLabel1.Font = new Font("Segoe UI Light", 26F, FontStyle.Regular, GraphicsUnit.Point);
-            themedLabel1.Location = new Point(0, 0);
-            themedLabel1.Margin = new Padding(4, 5, 4, 5);
+            themedLabel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            themedLabel1.Font = new Font("Microsoft YaHei UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            themedLabel1.Location = new Point(49, -1);
             themedLabel1.Name = "themedLabel1";
-            themedLabel1.Padding = new Padding(13, 0, 0, 0);
-            themedLabel1.Size = new Size(999, 85);
+            themedLabel1.Padding = new Padding(9, 0, 0, 0);
+            themedLabel1.Size = new Size(449, 57);
             themedLabel1.TabIndex = 25;
-            themedLabel1.Text = "Windows Forms Aero";
+            themedLabel1.Text = "iNKORE.UI.WinForms.Styler";
             themedLabel1.TextAlignVertical = System.Windows.Forms.VisualStyles.VerticalAlignment.Center;
             // 
             // tabControl1
             // 
             tabControl1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             tabControl1.Controls.Add(tabPage1);
-            tabControl1.Controls.Add(tabPage2);
-            tabControl1.Controls.Add(tabPage3);
             tabControl1.Controls.Add(tabPage4);
             tabControl1.Controls.Add(tabPage5);
-            tabControl1.Controls.Add(tabPage6);
-            tabControl1.Location = new Point(8, 101);
-            tabControl1.Margin = new Padding(4, 5, 4, 5);
+            tabControl1.Controls.Add(tabPage2);
+            tabControl1.Location = new Point(5, 67);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(986, 585);
+            tabControl1.Size = new Size(699, 408);
             tabControl1.TabIndex = 0;
             // 
             // tabPage1
             // 
             tabPage1.BackColor = Color.Transparent;
-            tabPage1.Controls.Add(flowLayoutPanel1);
+            tabPage1.Controls.Add(stylePanel2);
+            tabPage1.Controls.Add(stylePanel1);
+            tabPage1.Controls.Add(commandLink4);
+            tabPage1.Controls.Add(commandLink3);
             tabPage1.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
             tabPage1.ForeColor = SystemColors.ControlText;
-            tabPage1.Location = new Point(4, 33);
-            tabPage1.Margin = new Padding(4, 5, 4, 5);
+            tabPage1.Location = new Point(4, 26);
             tabPage1.Name = "tabPage1";
-            tabPage1.Padding = new Padding(4, 5, 4, 5);
-            tabPage1.Size = new Size(978, 548);
+            tabPage1.Padding = new Padding(3);
+            tabPage1.Size = new Size(691, 378);
             tabPage1.TabIndex = 0;
-            tabPage1.Text = "Buttons";
+            tabPage1.Text = "Basic Controls";
             tabPage1.UseVisualStyleBackColor = true;
             // 
-            // flowLayoutPanel1
+            // stylePanel2
             // 
-            flowLayoutPanel1.Controls.Add(button1);
-            flowLayoutPanel1.Controls.Add(splitButton2);
-            flowLayoutPanel1.Controls.Add(splitButton1);
-            flowLayoutPanel1.Controls.Add(commandLink1);
-            flowLayoutPanel1.Controls.Add(commandLink2);
-            flowLayoutPanel1.Controls.Add(commandLink3);
-            flowLayoutPanel1.Controls.Add(commandLink4);
-            flowLayoutPanel1.Dock = DockStyle.Fill;
-            flowLayoutPanel1.FlowDirection = FlowDirection.TopDown;
-            flowLayoutPanel1.Location = new Point(4, 5);
-            flowLayoutPanel1.Margin = new Padding(4, 5, 4, 5);
-            flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(970, 538);
-            flowLayoutPanel1.TabIndex = 0;
-            // 
-            // button1
-            // 
-            button1.FlatStyle = FlatStyle.System;
-            button1.Location = new Point(4, 5);
-            button1.Margin = new Padding(4, 5, 4, 5);
-            button1.Name = "button1";
-            button1.ShowShield = true;
-            button1.Size = new Size(203, 45);
-            button1.TabIndex = 0;
-            button1.Text = "Shield Button";
-            button1.UseVisualStyleBackColor = true;
-            // 
-            // splitButton2
-            // 
-            splitButton2.FlatStyle = FlatStyle.System;
-            splitButton2.Location = new Point(4, 60);
-            splitButton2.Margin = new Padding(4, 5, 4, 5);
-            splitButton2.Name = "splitButton2";
-            splitButton2.Size = new Size(203, 45);
-            splitButton2.SplitMenuStrip = contextMenu1;
-            splitButton2.TabIndex = 6;
-            splitButton2.Text = "Split";
-            splitButton2.UseVisualStyleBackColor = true;
-            // 
-            // contextMenu1
-            // 
-            contextMenu1.ImageScalingSize = new Size(24, 24);
-            contextMenu1.Items.AddRange(new ToolStripItem[] { menuItem3, menuItem1, menuItem2 });
-            contextMenu1.Name = "contextMenu1";
-            contextMenu1.Size = new Size(171, 94);
-            // 
-            // menuItem3
-            // 
-            menuItem3.Name = "menuItem3";
-            menuItem3.Size = new Size(170, 30);
-            menuItem3.Text = "Automatic";
-            // 
-            // menuItem1
-            // 
-            menuItem1.Name = "menuItem1";
-            menuItem1.Size = new Size(170, 30);
-            menuItem1.Text = "Context";
-            // 
-            // menuItem2
-            // 
-            menuItem2.Name = "menuItem2";
-            menuItem2.Size = new Size(170, 30);
-            menuItem2.Text = "Menu";
-            // 
-            // splitButton1
-            // 
-            splitButton1.FlatStyle = FlatStyle.System;
-            splitButton1.Location = new Point(4, 115);
-            splitButton1.Margin = new Padding(4, 5, 4, 5);
-            splitButton1.Name = "splitButton1";
-            splitButton1.Size = new Size(203, 45);
-            splitButton1.SplitMenuStrip = contextMenu1;
-            splitButton1.TabIndex = 1;
-            splitButton1.Text = "Split left";
-            splitButton1.UseVisualStyleBackColor = true;
-            // 
-            // commandLink1
-            // 
-            commandLink1.FlatStyle = FlatStyle.System;
-            commandLink1.Location = new Point(4, 170);
-            commandLink1.Margin = new Padding(4, 5, 4, 5);
-            commandLink1.Name = "commandLink1";
-            commandLink1.Note = "Detail note.";
-            commandLink1.Size = new Size(344, 115);
-            commandLink1.TabIndex = 2;
-            commandLink1.Text = "Command Link";
-            commandLink1.UseVisualStyleBackColor = true;
-            commandLink1.Click += commandLink1_Click;
-            // 
-            // commandLink2
-            // 
-            commandLink2.FlatStyle = FlatStyle.System;
-            commandLink2.Location = new Point(4, 295);
-            commandLink2.Margin = new Padding(4, 5, 4, 5);
-            commandLink2.Name = "commandLink2";
-            commandLink2.Note = "This command requires administrator access rights.";
-            commandLink2.ShowShield = true;
-            commandLink2.Size = new Size(344, 115);
-            commandLink2.TabIndex = 3;
-            commandLink2.Text = "Shield";
-            commandLink2.UseVisualStyleBackColor = true;
-            // 
-            // commandLink3
-            // 
-            commandLink3.FlatStyle = FlatStyle.System;
-            commandLink3.Location = new Point(356, 5);
-            commandLink3.Margin = new Padding(4, 5, 4, 5);
-            commandLink3.Name = "commandLink3";
-            commandLink3.Size = new Size(390, 120);
-            commandLink3.TabIndex = 4;
-            commandLink3.Text = "Show Test Vertical Panel";
-            commandLink3.UseVisualStyleBackColor = true;
-            commandLink3.Click += commandLink3_Click;
-            // 
-            // commandLink4
-            // 
-            commandLink4.FlatStyle = FlatStyle.System;
-            commandLink4.Location = new Point(356, 135);
-            commandLink4.Margin = new Padding(4, 5, 4, 5);
-            commandLink4.Name = "commandLink4";
-            commandLink4.Size = new Size(434, 117);
-            commandLink4.TabIndex = 5;
-            commandLink4.Text = "Show Test Horizontal Panel";
-            commandLink4.UseVisualStyleBackColor = true;
-            commandLink4.Click += commandLink4_Click;
-            // 
-            // tabPage2
-            // 
-            tabPage2.Controls.Add(flowLayoutPanel2);
-            tabPage2.Location = new Point(4, 33);
-            tabPage2.Margin = new Padding(4, 5, 4, 5);
-            tabPage2.Name = "tabPage2";
-            tabPage2.Padding = new Padding(4, 5, 4, 5);
-            tabPage2.Size = new Size(978, 548);
-            tabPage2.TabIndex = 1;
-            tabPage2.Text = "Progress bars";
-            tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // flowLayoutPanel2
-            // 
-            flowLayoutPanel2.Controls.Add(progressBar1);
-            flowLayoutPanel2.Controls.Add(progressBar2);
-            flowLayoutPanel2.Controls.Add(progressBar3);
-            flowLayoutPanel2.Controls.Add(progressBar4);
-            flowLayoutPanel2.Dock = DockStyle.Fill;
-            flowLayoutPanel2.FlowDirection = FlowDirection.TopDown;
-            flowLayoutPanel2.Location = new Point(4, 5);
-            flowLayoutPanel2.Margin = new Padding(4, 5, 4, 5);
-            flowLayoutPanel2.Name = "flowLayoutPanel2";
-            flowLayoutPanel2.Size = new Size(970, 538);
-            flowLayoutPanel2.TabIndex = 0;
-            // 
-            // progressBar1
-            // 
-            progressBar1.Location = new Point(4, 5);
-            progressBar1.Margin = new Padding(4, 5, 4, 5);
-            progressBar1.Name = "progressBar1";
-            progressBar1.Size = new Size(591, 45);
-            progressBar1.TabIndex = 0;
-            progressBar1.Value = 70;
-            // 
-            // progressBar2
-            // 
-            progressBar2.Location = new Point(4, 60);
-            progressBar2.Margin = new Padding(4, 5, 4, 5);
-            progressBar2.Name = "progressBar2";
-            progressBar2.ProgressState = Styler.Controls.AdvProgressBarState.Paused;
-            progressBar2.Size = new Size(591, 45);
-            progressBar2.TabIndex = 1;
-            progressBar2.Value = 50;
-            // 
-            // progressBar3
-            // 
-            progressBar3.Location = new Point(4, 115);
-            progressBar3.Margin = new Padding(4, 5, 4, 5);
-            progressBar3.Name = "progressBar3";
-            progressBar3.ProgressState = Styler.Controls.AdvProgressBarState.Error;
-            progressBar3.Size = new Size(591, 45);
-            progressBar3.TabIndex = 2;
-            progressBar3.Value = 30;
-            // 
-            // progressBar4
-            // 
-            progressBar4.Location = new Point(4, 170);
-            progressBar4.Margin = new Padding(4, 5, 4, 5);
-            progressBar4.Name = "progressBar4";
-            progressBar4.Size = new Size(591, 45);
-            progressBar4.Style = ProgressBarStyle.Marquee;
-            progressBar4.TabIndex = 3;
-            // 
-            // tabPage3
-            // 
-            tabPage3.Controls.Add(flowLayoutPanel4);
-            tabPage3.Location = new Point(4, 33);
-            tabPage3.Margin = new Padding(4, 5, 4, 5);
-            tabPage3.Name = "tabPage3";
-            tabPage3.Size = new Size(978, 548);
-            tabPage3.TabIndex = 2;
-            tabPage3.Text = "Task Dialogs";
-            tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // flowLayoutPanel4
-            // 
-            flowLayoutPanel4.Controls.Add(button2);
-            flowLayoutPanel4.Controls.Add(button11);
-            flowLayoutPanel4.Controls.Add(button3);
-            flowLayoutPanel4.Controls.Add(button8);
-            flowLayoutPanel4.Controls.Add(button4);
-            flowLayoutPanel4.Controls.Add(button5);
-            flowLayoutPanel4.Controls.Add(button6);
-            flowLayoutPanel4.Controls.Add(button7);
-            flowLayoutPanel4.Controls.Add(button10);
-            flowLayoutPanel4.Controls.Add(button9);
-            flowLayoutPanel4.Dock = DockStyle.Fill;
-            flowLayoutPanel4.FlowDirection = FlowDirection.TopDown;
-            flowLayoutPanel4.Location = new Point(0, 0);
-            flowLayoutPanel4.Margin = new Padding(4, 5, 4, 5);
-            flowLayoutPanel4.Name = "flowLayoutPanel4";
-            flowLayoutPanel4.Size = new Size(978, 548);
-            flowLayoutPanel4.TabIndex = 0;
-            // 
-            // button2
-            // 
-            button2.Location = new Point(4, 5);
-            button2.Margin = new Padding(4, 5, 4, 5);
-            button2.Name = "button2";
-            button2.Size = new Size(187, 45);
-            button2.TabIndex = 0;
-            button2.Text = "Information";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += td_info;
-            // 
-            // button11
-            // 
-            button11.Location = new Point(4, 60);
-            button11.Margin = new Padding(4, 5, 4, 5);
-            button11.Name = "button11";
-            button11.Size = new Size(187, 45);
-            button11.TabIndex = 1;
-            button11.Text = "Warning";
-            button11.UseVisualStyleBackColor = true;
-            button11.Click += ts_warning;
+            stylePanel2.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            stylePanel2.BackColor = Color.Transparent;
+            stylePanel2.Controls.Add(button3);
+            stylePanel2.Controls.Add(advComboBox1);
+            stylePanel2.Location = new Point(112, 305);
+            stylePanel2.Name = "stylePanel2";
+            stylePanel2.Size = new Size(466, 51);
+            stylePanel2.TabIndex = 12;
+            stylePanel2.Theme = Styler.Controls.StylePanelThemes.TooltipBox;
             // 
             // button3
             // 
-            button3.Location = new Point(4, 115);
-            button3.Margin = new Padding(4, 5, 4, 5);
+            button3.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            button3.Location = new Point(355, 13);
             button3.Name = "button3";
-            button3.Size = new Size(187, 45);
-            button3.TabIndex = 2;
-            button3.Text = "Error";
+            button3.Size = new Size(97, 23);
+            button3.TabIndex = 1;
+            button3.Text = "ShowDialog";
             button3.UseVisualStyleBackColor = true;
-            button3.Click += td_error;
+            button3.Click += button3_Click;
             // 
-            // button8
+            // advComboBox1
             // 
-            button8.Location = new Point(4, 170);
-            button8.Margin = new Padding(4, 5, 4, 5);
-            button8.Name = "button8";
-            button8.Size = new Size(187, 45);
-            button8.TabIndex = 3;
-            button8.Text = "Shield";
-            button8.UseVisualStyleBackColor = true;
-            button8.Click += td_shield;
+            advComboBox1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            advComboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
+            advComboBox1.FlatStyle = FlatStyle.System;
+            advComboBox1.FormattingEnabled = true;
+            advComboBox1.Items.AddRange(new object[] { "Task Dialog", "Task Dialog with command links", "Progress Dialog", "Credential Dialog", "Vista-style Folder Browser Dialog", "Vista-style Open File Dialog", "Vista-style Save File Dialog", "ShellAboutDialog" });
+            advComboBox1.Location = new Point(12, 15);
+            advComboBox1.Name = "advComboBox1";
+            advComboBox1.Size = new Size(337, 21);
+            advComboBox1.TabIndex = 0;
             // 
-            // button4
+            // stylePanel1
             // 
-            button4.Location = new Point(4, 225);
-            button4.Margin = new Padding(4, 5, 4, 5);
-            button4.Name = "button4";
-            button4.Size = new Size(187, 45);
-            button4.TabIndex = 4;
-            button4.Text = "Security Error";
-            button4.UseVisualStyleBackColor = true;
-            button4.Click += td_shielderror;
+            stylePanel1.Anchor = AnchorStyles.None;
+            stylePanel1.BackColor = Color.Transparent;
+            stylePanel1.Controls.Add(progressBar1);
+            stylePanel1.Controls.Add(textBox1);
+            stylePanel1.Controls.Add(progressBar4);
+            stylePanel1.Controls.Add(textBox2);
+            stylePanel1.Controls.Add(progressBar3);
+            stylePanel1.Controls.Add(comboBox1);
+            stylePanel1.Controls.Add(progressBar2);
+            stylePanel1.Controls.Add(splitButton1);
+            stylePanel1.Controls.Add(splitButton2);
+            stylePanel1.Controls.Add(commandLink1);
+            stylePanel1.Controls.Add(commandLink2);
+            stylePanel1.Controls.Add(button1);
+            stylePanel1.Location = new Point(112, 39);
+            stylePanel1.Name = "stylePanel1";
+            stylePanel1.Size = new Size(466, 260);
+            stylePanel1.TabIndex = 11;
+            stylePanel1.Theme = Styler.Controls.StylePanelThemes.CtrlNavigation;
             // 
-            // button5
+            // progressBar1
             // 
-            button5.Location = new Point(4, 280);
-            button5.Margin = new Padding(4, 5, 4, 5);
-            button5.Name = "button5";
-            button5.Size = new Size(187, 45);
-            button5.TabIndex = 5;
-            button5.Text = "Security Success";
-            button5.UseVisualStyleBackColor = true;
-            button5.Click += td_shieldsuccess;
-            // 
-            // button6
-            // 
-            button6.Location = new Point(4, 335);
-            button6.Margin = new Padding(4, 5, 4, 5);
-            button6.Name = "button6";
-            button6.Size = new Size(187, 45);
-            button6.TabIndex = 6;
-            button6.Text = "Blue shield";
-            button6.UseVisualStyleBackColor = true;
-            button6.Click += td_blueshield;
-            // 
-            // button7
-            // 
-            button7.Location = new Point(4, 390);
-            button7.Margin = new Padding(4, 5, 4, 5);
-            button7.Name = "button7";
-            button7.Size = new Size(187, 45);
-            button7.TabIndex = 7;
-            button7.Text = "Gray shield";
-            button7.UseVisualStyleBackColor = true;
-            button7.Click += td_grayshield;
-            // 
-            // button10
-            // 
-            button10.Location = new Point(199, 5);
-            button10.Margin = new Padding(4, 5, 4, 5);
-            button10.Name = "button10";
-            button10.Size = new Size(187, 100);
-            button10.TabIndex = 8;
-            button10.Text = "Complex dialog";
-            button10.UseVisualStyleBackColor = true;
-            button10.Click += td_complex;
-            // 
-            // button9
-            // 
-            button9.Location = new Point(199, 115);
-            button9.Margin = new Padding(4, 5, 4, 5);
-            button9.Name = "button9";
-            button9.Size = new Size(187, 100);
-            button9.TabIndex = 9;
-            button9.Text = "Progress bar dialog";
-            button9.UseVisualStyleBackColor = true;
-            button9.Click += td_progress;
-            // 
-            // tabPage4
-            // 
-            tabPage4.Controls.Add(flowLayoutPanel3);
-            tabPage4.Location = new Point(4, 33);
-            tabPage4.Margin = new Padding(4, 5, 4, 5);
-            tabPage4.Name = "tabPage4";
-            tabPage4.Padding = new Padding(4, 5, 4, 5);
-            tabPage4.Size = new Size(978, 548);
-            tabPage4.TabIndex = 3;
-            tabPage4.Text = "Data controls";
-            tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // flowLayoutPanel3
-            // 
-            flowLayoutPanel3.AutoScroll = true;
-            flowLayoutPanel3.Controls.Add(textBox1);
-            flowLayoutPanel3.Controls.Add(textBox2);
-            flowLayoutPanel3.Controls.Add(comboBox1);
-            flowLayoutPanel3.Controls.Add(treeView1);
-            flowLayoutPanel3.Controls.Add(label1);
-            flowLayoutPanel3.Controls.Add(treeView2);
-            flowLayoutPanel3.Controls.Add(label2);
-            flowLayoutPanel3.Controls.Add(listView1);
-            flowLayoutPanel3.Dock = DockStyle.Fill;
-            flowLayoutPanel3.FlowDirection = FlowDirection.TopDown;
-            flowLayoutPanel3.Location = new Point(4, 5);
-            flowLayoutPanel3.Margin = new Padding(4, 5, 4, 5);
-            flowLayoutPanel3.Name = "flowLayoutPanel3";
-            flowLayoutPanel3.Size = new Size(970, 538);
-            flowLayoutPanel3.TabIndex = 0;
+            progressBar1.Location = new Point(12, 14);
+            progressBar1.Name = "progressBar1";
+            progressBar1.Size = new Size(188, 24);
+            progressBar1.TabIndex = 4;
+            progressBar1.Value = 70;
             // 
             // textBox1
             // 
             textBox1.CueBannerText = "Cue banner";
-            textBox1.Location = new Point(4, 5);
-            textBox1.Margin = new Padding(4, 5, 4, 5);
+            textBox1.Location = new Point(12, 165);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(324, 30);
-            textBox1.TabIndex = 0;
+            textBox1.Size = new Size(188, 22);
+            textBox1.TabIndex = 8;
+            // 
+            // progressBar4
+            // 
+            progressBar4.Location = new Point(12, 122);
+            progressBar4.Name = "progressBar4";
+            progressBar4.Size = new Size(188, 24);
+            progressBar4.Style = ProgressBarStyle.Marquee;
+            progressBar4.TabIndex = 7;
             // 
             // textBox2
             // 
             textBox2.CueBannerText = "Cue banner (w/focus)";
-            textBox2.Location = new Point(4, 45);
-            textBox2.Margin = new Padding(4, 5, 4, 5);
+            textBox2.Location = new Point(12, 194);
             textBox2.Name = "textBox2";
             textBox2.ShowCueFocused = true;
-            textBox2.Size = new Size(324, 30);
-            textBox2.TabIndex = 1;
+            textBox2.Size = new Size(188, 22);
+            textBox2.TabIndex = 9;
+            // 
+            // progressBar3
+            // 
+            progressBar3.Location = new Point(12, 86);
+            progressBar3.Name = "progressBar3";
+            progressBar3.ProgressState = Styler.Controls.AdvProgressBarState.Error;
+            progressBar3.Size = new Size(188, 24);
+            progressBar3.TabIndex = 6;
+            progressBar3.Value = 30;
             // 
             // comboBox1
             // 
@@ -649,19 +375,150 @@ namespace Inkore.UI.WinForms.Styler.Showcase
             comboBox1.FlatStyle = FlatStyle.System;
             comboBox1.FormattingEnabled = true;
             comboBox1.Items.AddRange(new object[] { "1", "2", "3", "4", "5" });
-            comboBox1.Location = new Point(4, 85);
-            comboBox1.Margin = new Padding(4, 5, 4, 5);
+            comboBox1.Location = new Point(12, 223);
             comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(324, 32);
-            comboBox1.TabIndex = 2;
+            comboBox1.Size = new Size(188, 21);
+            comboBox1.TabIndex = 10;
+            // 
+            // progressBar2
+            // 
+            progressBar2.Location = new Point(12, 50);
+            progressBar2.Name = "progressBar2";
+            progressBar2.ProgressState = Styler.Controls.AdvProgressBarState.Paused;
+            progressBar2.Size = new Size(188, 24);
+            progressBar2.TabIndex = 5;
+            progressBar2.Value = 50;
+            // 
+            // splitButton1
+            // 
+            splitButton1.FlatStyle = FlatStyle.System;
+            splitButton1.Location = new Point(336, 50);
+            splitButton1.Name = "splitButton1";
+            splitButton1.Size = new Size(116, 30);
+            splitButton1.SplitMenuStrip = contextMenu1;
+            splitButton1.TabIndex = 1;
+            splitButton1.Text = "Split left";
+            splitButton1.UseVisualStyleBackColor = true;
+            // 
+            // contextMenu1
+            // 
+            contextMenu1.ImageScalingSize = new Size(24, 24);
+            contextMenu1.Items.AddRange(new ToolStripItem[] { menuItem3, menuItem1, menuItem2 });
+            contextMenu1.Name = "contextMenu1";
+            contextMenu1.Size = new Size(135, 70);
+            // 
+            // menuItem3
+            // 
+            menuItem3.Name = "menuItem3";
+            menuItem3.Size = new Size(134, 22);
+            menuItem3.Text = "Automatic";
+            // 
+            // menuItem1
+            // 
+            menuItem1.Name = "menuItem1";
+            menuItem1.Size = new Size(134, 22);
+            menuItem1.Text = "Context";
+            // 
+            // menuItem2
+            // 
+            menuItem2.Name = "menuItem2";
+            menuItem2.Size = new Size(134, 22);
+            menuItem2.Text = "Menu";
+            // 
+            // splitButton2
+            // 
+            splitButton2.FlatStyle = FlatStyle.System;
+            splitButton2.Location = new Point(215, 50);
+            splitButton2.Name = "splitButton2";
+            splitButton2.Size = new Size(115, 30);
+            splitButton2.SplitMenuStrip = contextMenu1;
+            splitButton2.TabIndex = 6;
+            splitButton2.Text = "Split";
+            splitButton2.UseVisualStyleBackColor = true;
+            // 
+            // commandLink1
+            // 
+            commandLink1.FlatStyle = FlatStyle.System;
+            commandLink1.Location = new Point(215, 86);
+            commandLink1.Name = "commandLink1";
+            commandLink1.Note = "Detail note.";
+            commandLink1.Size = new Size(237, 73);
+            commandLink1.TabIndex = 2;
+            commandLink1.Text = "Command Link";
+            commandLink1.UseVisualStyleBackColor = true;
+            commandLink1.Click += commandLink1_Click;
+            // 
+            // commandLink2
+            // 
+            commandLink2.FlatStyle = FlatStyle.System;
+            commandLink2.Location = new Point(215, 165);
+            commandLink2.Name = "commandLink2";
+            commandLink2.Note = "This command requires administrator access rights.";
+            commandLink2.ShowShield = true;
+            commandLink2.Size = new Size(237, 77);
+            commandLink2.TabIndex = 3;
+            commandLink2.Text = "Shield";
+            commandLink2.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            button1.FlatStyle = FlatStyle.System;
+            button1.Location = new Point(215, 14);
+            button1.Name = "button1";
+            button1.ShowShield = true;
+            button1.Size = new Size(237, 30);
+            button1.TabIndex = 0;
+            button1.Text = "Shield Button";
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // commandLink4
+            // 
+            commandLink4.Anchor = AnchorStyles.None;
+            commandLink4.FlatStyle = FlatStyle.System;
+            commandLink4.Location = new Point(281, -2);
+            commandLink4.Name = "commandLink4";
+            commandLink4.Size = new Size(225, 47);
+            commandLink4.TabIndex = 5;
+            commandLink4.Text = "Test Horizontal Panel";
+            commandLink4.UseVisualStyleBackColor = true;
+            commandLink4.Visible = false;
+            commandLink4.Click += commandLink4_Click;
+            // 
+            // commandLink3
+            // 
+            commandLink3.Anchor = AnchorStyles.None;
+            commandLink3.FlatStyle = FlatStyle.System;
+            commandLink3.Location = new Point(40, -2);
+            commandLink3.Name = "commandLink3";
+            commandLink3.Size = new Size(224, 49);
+            commandLink3.TabIndex = 4;
+            commandLink3.Text = "Test Vertical Panel";
+            commandLink3.UseVisualStyleBackColor = true;
+            commandLink3.Visible = false;
+            commandLink3.Click += commandLink3_Click;
+            // 
+            // tabPage4
+            // 
+            tabPage4.Controls.Add(treeView1);
+            tabPage4.Controls.Add(label1);
+            tabPage4.Controls.Add(treeView2);
+            tabPage4.Controls.Add(listView1);
+            tabPage4.Controls.Add(label2);
+            tabPage4.Location = new Point(4, 26);
+            tabPage4.Name = "tabPage4";
+            tabPage4.Padding = new Padding(3);
+            tabPage4.Size = new Size(691, 378);
+            tabPage4.TabIndex = 3;
+            tabPage4.Text = "Data controls";
+            tabPage4.UseVisualStyleBackColor = true;
             // 
             // treeView1
             // 
+            treeView1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             treeView1.HotTracking = true;
             treeView1.ImageIndex = 0;
             treeView1.ImageList = imageList1;
-            treeView1.Location = new Point(336, 5);
-            treeView1.Margin = new Padding(4, 5, 4, 5);
+            treeView1.Location = new Point(6, 6);
             treeView1.Name = "treeView1";
             treeNode1.ImageIndex = 10;
             treeNode1.Name = "Node1";
@@ -776,25 +633,27 @@ namespace Inkore.UI.WinForms.Styler.Showcase
             treeView1.SelectedImageIndex = 0;
             treeView1.ShowHScroll = false;
             treeView1.ShowLines = false;
-            treeView1.Size = new Size(201, 446);
+            treeView1.Size = new Size(135, 321);
             treeView1.TabIndex = 4;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(335, 456);
+            label1.Location = new Point(6, 330);
+            label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(133, 24);
+            label1.Size = new Size(92, 17);
             label1.TabIndex = 7;
             label1.Text = "Aero tree view";
+            label1.Click += label1_Click;
             // 
             // treeView2
             // 
+            treeView2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             treeView2.HotTracking = true;
             treeView2.ImageIndex = 0;
             treeView2.ImageList = imageList1;
-            treeView2.Location = new Point(545, 5);
-            treeView2.Margin = new Padding(4, 5, 4, 5);
+            treeView2.Location = new Point(147, 6);
             treeView2.Name = "treeView2";
             treeNode43.ImageIndex = 10;
             treeNode43.Name = "Node1";
@@ -908,26 +767,17 @@ namespace Inkore.UI.WinForms.Styler.Showcase
             treeView2.Nodes.AddRange(new TreeNode[] { treeNode43, treeNode44, treeNode51, treeNode62, treeNode63, treeNode73, treeNode83, treeNode84 });
             treeView2.SelectedImageIndex = 0;
             treeView2.ShowLines = false;
-            treeView2.Size = new Size(201, 446);
+            treeView2.Size = new Size(135, 321);
             treeView2.TabIndex = 6;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(544, 456);
-            label2.Name = "label2";
-            label2.Size = new Size(171, 24);
-            label2.TabIndex = 8;
-            label2.Text = "Standard tree view";
             // 
             // listView1
             // 
+            listView1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             listView1.Items.AddRange(new ListViewItem[] { listViewItem1, listViewItem2, listViewItem3, listViewItem4, listViewItem5 });
             listView1.LargeImageList = imageList2;
-            listView1.Location = new Point(754, 5);
-            listView1.Margin = new Padding(4, 5, 4, 5);
+            listView1.Location = new Point(288, 6);
             listView1.Name = "listView1";
-            listView1.Size = new Size(423, 379);
+            listView1.Size = new Size(397, 321);
             listView1.SmallImageList = imageList1;
             listView1.TabIndex = 5;
             listView1.UseCompatibleStateImageBehavior = false;
@@ -949,94 +799,318 @@ namespace Inkore.UI.WinForms.Styler.Showcase
             imageList2.Images.SetKeyName(9, "hdwwiz.exe_I05dd_0409.png");
             imageList2.Images.SetKeyName(10, "setup_wm.exe_I0046_0409.png");
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(147, 330);
+            label2.Margin = new Padding(2, 0, 2, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(117, 17);
+            label2.TabIndex = 8;
+            label2.Text = "Standard tree view";
+            label2.Click += label2_Click;
+            // 
             // tabPage5
             // 
+            tabPage5.Controls.Add(button2);
             tabPage5.Controls.Add(thumbnailViewer1);
-            tabPage5.Location = new Point(4, 33);
-            tabPage5.Margin = new Padding(4, 5, 4, 5);
+            tabPage5.Location = new Point(4, 26);
             tabPage5.Name = "tabPage5";
-            tabPage5.Padding = new Padding(4, 5, 4, 5);
-            tabPage5.Size = new Size(978, 548);
+            tabPage5.Padding = new Padding(3);
+            tabPage5.Size = new Size(691, 378);
             tabPage5.TabIndex = 4;
             tabPage5.Text = "DWM";
             tabPage5.UseVisualStyleBackColor = true;
             // 
+            // button2
+            // 
+            button2.Location = new Point(290, 107);
+            button2.Name = "button2";
+            button2.Size = new Size(198, 53);
+            button2.TabIndex = 1;
+            button2.Text = "ShowWindow";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
             // thumbnailViewer1
             // 
-            thumbnailViewer1.Location = new Point(10, 12);
-            thumbnailViewer1.Margin = new Padding(4, 5, 4, 5);
+            thumbnailViewer1.Location = new Point(7, 8);
             thumbnailViewer1.Name = "thumbnailViewer1";
             thumbnailViewer1.ScaleSmallerThumbnails = false;
-            thumbnailViewer1.Size = new Size(280, 323);
+            thumbnailViewer1.Size = new Size(187, 215);
             thumbnailViewer1.TabIndex = 0;
             thumbnailViewer1.Text = "thumbnailViewer1";
             thumbnailViewer1.ThumbnailAlignment = ContentAlignment.MiddleCenter;
             // 
-            // tabPage6
+            // tabPage2
             // 
-            tabPage6.Controls.Add(labelVDesktopId);
-            tabPage6.Controls.Add(labelVDesktopCurrent);
-            tabPage6.Controls.Add(buttonVDesktop);
-            tabPage6.Location = new Point(4, 33);
-            tabPage6.Name = "tabPage6";
-            tabPage6.Padding = new Padding(3);
-            tabPage6.Size = new Size(978, 548);
-            tabPage6.TabIndex = 5;
-            tabPage6.Text = "Virtual desktops";
-            tabPage6.UseVisualStyleBackColor = true;
+            tabPage2.Controls.Add(panel1);
+            tabPage2.Location = new Point(4, 26);
+            tabPage2.Name = "tabPage2";
+            tabPage2.Padding = new Padding(10);
+            tabPage2.Size = new Size(691, 378);
+            tabPage2.TabIndex = 5;
+            tabPage2.Text = "Rebar";
+            tabPage2.UseVisualStyleBackColor = true;
             // 
-            // labelVDesktopId
+            // panel1
             // 
-            labelVDesktopId.Location = new Point(8, 103);
-            labelVDesktopId.Name = "labelVDesktopId";
-            labelVDesktopId.Size = new Size(618, 45);
-            labelVDesktopId.TabIndex = 2;
-            labelVDesktopId.TextAlign = ContentAlignment.MiddleLeft;
+            panel1.BorderStyle = BorderStyle.Fixed3D;
+            panel1.Controls.Add(richTextBox1);
+            panel1.Controls.Add(searchTextBox1);
+            panel1.Controls.Add(advTextBox1);
+            panel1.Controls.Add(toolStrip1);
+            panel1.Controls.Add(menuStrip1);
+            panel1.Controls.Add(rebarWrapper1);
+            panel1.Dock = DockStyle.Fill;
+            panel1.Location = new Point(10, 10);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(671, 358);
+            panel1.TabIndex = 1;
             // 
-            // labelVDesktopCurrent
+            // richTextBox1
             // 
-            labelVDesktopCurrent.Location = new Point(8, 58);
-            labelVDesktopCurrent.Name = "labelVDesktopCurrent";
-            labelVDesktopCurrent.Size = new Size(618, 45);
-            labelVDesktopCurrent.TabIndex = 1;
-            labelVDesktopCurrent.TextAlign = ContentAlignment.MiddleLeft;
+            richTextBox1.BorderStyle = BorderStyle.None;
+            richTextBox1.Dock = DockStyle.Fill;
+            richTextBox1.Location = new Point(0, 0);
+            richTextBox1.Name = "richTextBox1";
+            richTextBox1.Size = new Size(667, 354);
+            richTextBox1.TabIndex = 5;
+            richTextBox1.Text = "Windows Native Rebar Sample!";
             // 
-            // buttonVDesktop
+            // searchTextBox1
             // 
-            buttonVDesktop.FlatStyle = FlatStyle.System;
-            buttonVDesktop.Location = new Point(10, 10);
-            buttonVDesktop.Name = "buttonVDesktop";
-            buttonVDesktop.Size = new Size(223, 45);
-            buttonVDesktop.TabIndex = 0;
-            buttonVDesktop.Text = "Refresh in 5 seconds";
-            buttonVDesktop.UseVisualStyleBackColor = true;
-            buttonVDesktop.Click += buttonVDesktop_Click;
+            searchTextBox1.ActiveFont = new Font("Microsoft YaHei UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            searchTextBox1.BackColor = SystemColors.Window;
+            searchTextBox1.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            searchTextBox1.ForeColor = SystemColors.WindowText;
+            searchTextBox1.InactiveFont = new Font("Microsoft YaHei UI", 9F, FontStyle.Italic, GraphicsUnit.Point);
+            searchTextBox1.Location = new Point(279, 220);
+            searchTextBox1.Name = "searchTextBox1";
+            searchTextBox1.Size = new Size(150, 21);
+            searchTextBox1.TabIndex = 3;
+            searchTextBox1.Text = "searchTextBox1";
+            // 
+            // advTextBox1
+            // 
+            advTextBox1.Location = new Point(160, 220);
+            advTextBox1.Name = "advTextBox1";
+            advTextBox1.Size = new Size(100, 23);
+            advTextBox1.TabIndex = 2;
+            // 
+            // toolStrip1
+            // 
+            toolStrip1.AutoSize = false;
+            toolStrip1.Dock = DockStyle.None;
+            toolStrip1.GripStyle = ToolStripGripStyle.Hidden;
+            toolStrip1.Items.AddRange(new ToolStripItem[] { toolStripButton1, toolStripButton2, toolStripButton3, toolStripLabel1, toolStripSplitButton1, toolStripDropDownButton1, toolStripProgressBar1, toolStripTextBox1, toolStripComboBox1 });
+            toolStrip1.Location = new Point(28, 128);
+            toolStrip1.Name = "toolStrip1";
+            toolStrip1.Size = new Size(541, 29);
+            toolStrip1.TabIndex = 1;
+            toolStrip1.Text = "toolStrip1";
+            // 
+            // toolStripButton1
+            // 
+            toolStripButton1.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            toolStripButton1.Image = (Image)resources.GetObject("toolStripButton1.Image");
+            toolStripButton1.ImageTransparentColor = Color.Magenta;
+            toolStripButton1.Name = "toolStripButton1";
+            toolStripButton1.Size = new Size(23, 26);
+            toolStripButton1.Text = "toolStripButton1";
+            // 
+            // toolStripButton2
+            // 
+            toolStripButton2.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            toolStripButton2.Image = (Image)resources.GetObject("toolStripButton2.Image");
+            toolStripButton2.ImageTransparentColor = Color.Magenta;
+            toolStripButton2.Name = "toolStripButton2";
+            toolStripButton2.Size = new Size(23, 26);
+            toolStripButton2.Text = "toolStripButton2";
+            // 
+            // toolStripButton3
+            // 
+            toolStripButton3.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            toolStripButton3.Image = (Image)resources.GetObject("toolStripButton3.Image");
+            toolStripButton3.ImageTransparentColor = Color.Magenta;
+            toolStripButton3.Name = "toolStripButton3";
+            toolStripButton3.Size = new Size(23, 26);
+            toolStripButton3.Text = "toolStripButton3";
+            // 
+            // toolStripLabel1
+            // 
+            toolStripLabel1.Name = "toolStripLabel1";
+            toolStripLabel1.Size = new Size(96, 26);
+            toolStripLabel1.Text = "toolStripLabel1";
+            // 
+            // toolStripSplitButton1
+            // 
+            toolStripSplitButton1.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            toolStripSplitButton1.Image = (Image)resources.GetObject("toolStripSplitButton1.Image");
+            toolStripSplitButton1.ImageTransparentColor = Color.Magenta;
+            toolStripSplitButton1.Name = "toolStripSplitButton1";
+            toolStripSplitButton1.Size = new Size(32, 26);
+            toolStripSplitButton1.Text = "toolStripSplitButton1";
+            // 
+            // toolStripDropDownButton1
+            // 
+            toolStripDropDownButton1.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            toolStripDropDownButton1.Image = (Image)resources.GetObject("toolStripDropDownButton1.Image");
+            toolStripDropDownButton1.ImageTransparentColor = Color.Magenta;
+            toolStripDropDownButton1.Name = "toolStripDropDownButton1";
+            toolStripDropDownButton1.Size = new Size(29, 26);
+            toolStripDropDownButton1.Text = "toolStripDropDownButton1";
+            // 
+            // toolStripProgressBar1
+            // 
+            toolStripProgressBar1.Name = "toolStripProgressBar1";
+            toolStripProgressBar1.Size = new Size(100, 26);
+            // 
+            // toolStripTextBox1
+            // 
+            toolStripTextBox1.Name = "toolStripTextBox1";
+            toolStripTextBox1.Size = new Size(100, 29);
+            // 
+            // toolStripComboBox1
+            // 
+            toolStripComboBox1.Name = "toolStripComboBox1";
+            toolStripComboBox1.Size = new Size(121, 25);
+            // 
+            // menuStrip1
+            // 
+            menuStrip1.AutoSize = false;
+            menuStrip1.Dock = DockStyle.None;
+            menuStrip1.Items.AddRange(new ToolStripItem[] { fileToolStripMenuItem, editToolStripMenuItem, viewToolStripMenuItem, toolsToolStripMenuItem, windowToolStripMenuItem, helpToolStripMenuItem });
+            menuStrip1.Location = new Point(43, 58);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Size = new Size(422, 25);
+            menuStrip1.TabIndex = 4;
+            menuStrip1.Text = "menuStrip1";
+            // 
+            // fileToolStripMenuItem
+            // 
+            fileToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { newToolStripMenuItem });
+            fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            fileToolStripMenuItem.Size = new Size(39, 21);
+            fileToolStripMenuItem.Text = "File";
+            // 
+            // newToolStripMenuItem
+            // 
+            newToolStripMenuItem.Name = "newToolStripMenuItem";
+            newToolStripMenuItem.Size = new Size(102, 22);
+            newToolStripMenuItem.Text = "New";
+            // 
+            // editToolStripMenuItem
+            // 
+            editToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { undoToolStripMenuItem });
+            editToolStripMenuItem.Name = "editToolStripMenuItem";
+            editToolStripMenuItem.Size = new Size(42, 21);
+            editToolStripMenuItem.Text = "Edit";
+            // 
+            // undoToolStripMenuItem
+            // 
+            undoToolStripMenuItem.Name = "undoToolStripMenuItem";
+            undoToolStripMenuItem.Size = new Size(108, 22);
+            undoToolStripMenuItem.Text = "Undo";
+            // 
+            // viewToolStripMenuItem
+            // 
+            viewToolStripMenuItem.Name = "viewToolStripMenuItem";
+            viewToolStripMenuItem.Size = new Size(47, 21);
+            viewToolStripMenuItem.Text = "View";
+            // 
+            // toolsToolStripMenuItem
+            // 
+            toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
+            toolsToolStripMenuItem.Size = new Size(52, 21);
+            toolsToolStripMenuItem.Text = "Tools";
+            // 
+            // windowToolStripMenuItem
+            // 
+            windowToolStripMenuItem.Name = "windowToolStripMenuItem";
+            windowToolStripMenuItem.Size = new Size(67, 21);
+            windowToolStripMenuItem.Text = "Window";
+            // 
+            // helpToolStripMenuItem
+            // 
+            helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            helpToolStripMenuItem.Size = new Size(47, 21);
+            helpToolStripMenuItem.Text = "Help";
+            // 
+            // rebarWrapper1
+            // 
+            rebarWrapper1.Dock = DockStyle.Top;
+            rebarWrapper1.Location = new Point(0, 0);
+            rebarWrapper1.Name = "rebarWrapper1";
+            rebarWrapper1.Size = new Size(667, 0);
+            rebarWrapper1.TabIndex = 0;
+            rebarWrapper1.Text = "rebarWrapper1";
+            // 
+            // navigationButton1
+            // 
+            navigationButton1.Anchor = AnchorStyles.Left;
+            navigationButton1.BackColor = Color.Black;
+            navigationButton1.Location = new Point(13, 14);
+            navigationButton1.Name = "navigationButton1";
+            navigationButton1.Size = new Size(30, 30);
+            navigationButton1.TabIndex = 27;
+            navigationButton1.Text = "navigationButton1";
+            navigationButton1.Type = Styler.Controls.NavigationButtonType.Back;
+            // 
+            // navigationButton2
+            // 
+            navigationButton2.Anchor = AnchorStyles.Right;
+            navigationButton2.BackColor = Color.Black;
+            navigationButton2.Location = new Point(666, 14);
+            navigationButton2.Name = "navigationButton2";
+            navigationButton2.Size = new Size(30, 30);
+            navigationButton2.TabIndex = 28;
+            navigationButton2.Text = "navigationButton2";
+            navigationButton2.Type = Styler.Controls.NavigationButtonType.Forward;
+            // 
+            // Panel_TopNavArea
+            // 
+            Panel_TopNavArea.BackColor = Color.Black;
+            Panel_TopNavArea.Controls.Add(navigationButton2);
+            Panel_TopNavArea.Controls.Add(navigationButton1);
+            Panel_TopNavArea.Controls.Add(themedLabel1);
+            Panel_TopNavArea.Dock = DockStyle.Top;
+            Panel_TopNavArea.Location = new Point(0, 0);
+            Panel_TopNavArea.Name = "Panel_TopNavArea";
+            Panel_TopNavArea.Size = new Size(708, 60);
+            Panel_TopNavArea.TabIndex = 29;
             // 
             // Main
             // 
-            AutoScaleDimensions = new SizeF(144F, 144F);
+            AutoScaleDimensions = new SizeF(96F, 96F);
             AutoScaleMode = AutoScaleMode.Dpi;
-            ClientSize = new Size(999, 750);
+            ClientSize = new Size(708, 518);
+            Controls.Add(Panel_TopNavArea);
             Controls.Add(tabControl1);
             Controls.Add(themedLabel2);
-            Controls.Add(themedLabel1);
-            MinimumSize = new Size(971, 629);
+            MainMenuStrip = menuStrip1;
+            Margin = new Padding(2);
+            MinimumSize = new Size(653, 432);
             Name = "Main";
             SizeGripStyle = SizeGripStyle.Hide;
             Text = "Windows Forms Aero";
             tabControl1.ResumeLayout(false);
             tabPage1.ResumeLayout(false);
-            flowLayoutPanel1.ResumeLayout(false);
+            stylePanel2.ResumeLayout(false);
+            stylePanel1.ResumeLayout(false);
+            stylePanel1.PerformLayout();
             contextMenu1.ResumeLayout(false);
-            tabPage2.ResumeLayout(false);
-            flowLayoutPanel2.ResumeLayout(false);
-            tabPage3.ResumeLayout(false);
-            flowLayoutPanel4.ResumeLayout(false);
             tabPage4.ResumeLayout(false);
-            flowLayoutPanel3.ResumeLayout(false);
-            flowLayoutPanel3.PerformLayout();
+            tabPage4.PerformLayout();
             tabPage5.ResumeLayout(false);
-            tabPage6.ResumeLayout(false);
+            tabPage2.ResumeLayout(false);
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            toolStrip1.ResumeLayout(false);
+            toolStrip1.PerformLayout();
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
+            Panel_TopNavArea.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -1047,39 +1121,16 @@ namespace Inkore.UI.WinForms.Styler.Showcase
         private Inkore.UI.WinForms.Styler.Controls.ThemeText.ThemedLabel themedLabel2;
         private TabControl tabControl1;
         private TabPage tabPage1;
-        private TabPage tabPage2;
-        private TabPage tabPage3;
         private ContextMenuStrip contextMenu1;
         private ToolStripMenuItem menuItem1;
         private ToolStripMenuItem menuItem2;
         private ToolStripMenuItem menuItem3;
-        private FlowLayoutPanel flowLayoutPanel2;
-        private Inkore.UI.WinForms.Styler.Controls.AdvProgressBar progressBar1;
-        private Inkore.UI.WinForms.Styler.Controls.AdvProgressBar progressBar2;
-        private Inkore.UI.WinForms.Styler.Controls.AdvProgressBar progressBar3;
-        private Inkore.UI.WinForms.Styler.Controls.AdvProgressBar progressBar4;
         private TabPage tabPage4;
-        private FlowLayoutPanel flowLayoutPanel3;
-        private Inkore.UI.WinForms.Styler.Controls.AdvTextBox textBox1;
-        private Inkore.UI.WinForms.Styler.Controls.AdvComboBox comboBox1;
         private Inkore.UI.WinForms.Styler.Controls.AdvTreeView treeView1;
         private Inkore.UI.WinForms.Styler.Controls.AdvListView listView1;
-        private FlowLayoutPanel flowLayoutPanel4;
-        private Button button2;
-        private Button button11;
-        private Button button3;
-        private Button button8;
-        private Button button4;
-        private Button button5;
-        private Button button6;
-        private Button button7;
-        private Button button10;
-        private Button button9;
         private TabPage tabPage5;
-        private Inkore.UI.WinForms.Styler.Controls.AdvTextBox textBox2;
         private ImageList imageList2;
         private Inkore.UI.WinForms.Styler.Dwm.ThumbnailViewer thumbnailViewer1;
-        private FlowLayoutPanel flowLayoutPanel1;
         private Inkore.UI.WinForms.Styler.Controls.AdvButton button1;
         private Inkore.UI.WinForms.Styler.Controls.SplitButton splitButton1;
         private Inkore.UI.WinForms.Styler.Controls.CommandLink commandLink1;
@@ -1090,9 +1141,45 @@ namespace Inkore.UI.WinForms.Styler.Showcase
         private Label label1;
         private Label label2;
         private Inkore.UI.WinForms.Styler.Controls.SplitButton splitButton2;
-        private TabPage tabPage6;
-        private Label labelVDesktopId;
-        private Label labelVDesktopCurrent;
-        private Inkore.UI.WinForms.Styler.Controls.AdvButton buttonVDesktop;
+        private Controls.AdvProgressBar progressBar1;
+        private Controls.AdvProgressBar progressBar2;
+        private Controls.AdvProgressBar progressBar3;
+        private Controls.AdvProgressBar progressBar4;
+        private Controls.StylePanel stylePanel1;
+        private Controls.AdvTextBox textBox1;
+        private Controls.AdvTextBox textBox2;
+        private Controls.AdvComboBox comboBox1;
+        private Controls.NavigationButton navigationButton1;
+        private Controls.NavigationButton navigationButton2;
+        private Panel Panel_TopNavArea;
+        private Button button2;
+        private Controls.StylePanel stylePanel2;
+        private Button button3;
+        private Controls.AdvComboBox advComboBox1;
+        private TabPage tabPage2;
+        private Panel panel1;
+        private Controls.Rebar.RebarWrapper rebarWrapper1;
+        private ToolStrip toolStrip1;
+        private ToolStripButton toolStripButton1;
+        private ToolStripButton toolStripButton2;
+        private ToolStripButton toolStripButton3;
+        private ToolStripLabel toolStripLabel1;
+        private ToolStripSplitButton toolStripSplitButton1;
+        private ToolStripDropDownButton toolStripDropDownButton1;
+        private ToolStripProgressBar toolStripProgressBar1;
+        private ToolStripTextBox toolStripTextBox1;
+        private ToolStripComboBox toolStripComboBox1;
+        private Controls.SearchTextBox searchTextBox1;
+        private Controls.AdvTextBox advTextBox1;
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem fileToolStripMenuItem;
+        private ToolStripMenuItem newToolStripMenuItem;
+        private ToolStripMenuItem editToolStripMenuItem;
+        private ToolStripMenuItem undoToolStripMenuItem;
+        private ToolStripMenuItem viewToolStripMenuItem;
+        private ToolStripMenuItem toolsToolStripMenuItem;
+        private ToolStripMenuItem windowToolStripMenuItem;
+        private ToolStripMenuItem helpToolStripMenuItem;
+        private RichTextBox richTextBox1;
     }
 }
