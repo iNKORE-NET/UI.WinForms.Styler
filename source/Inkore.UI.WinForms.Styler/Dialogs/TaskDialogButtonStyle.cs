@@ -1,5 +1,5 @@
-// Copyright ?Sven Groot (Inkore.UI.WinForms.Styler.org) 2009
-// BSD license; see license.txt for details.
+
+
 
 namespace Inkore.UI.WinForms.Styler.Dialogs
 {

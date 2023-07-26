@@ -1,14 +1,4 @@
-/*****************************************************
 
- * 
-
- * 
- * @author: Nick Berardi
- * @www: http://www.coderjournal.com/2007/03/creating-a-vista-like-search-box/
- * @integration: Lorenz Cuno Klopfenstein
-
- * 
- *****************************************************/
 
 using Inkore.UI.WinForms.Styler.Controls;
 using System;

@@ -1,12 +1,4 @@
-﻿/*****************************************************
- * WindowsFormsAero
- * https://github.com/LorenzCK/WindowsFormsAero
- * http://windowsformsaero.codeplex.com
- *
- * Author: Lorenz Cuno Klopfenstein <lck@klopfenstein.net>
- *****************************************************/
-
-namespace Inkore.UI.WinForms.Styler.Native {
+﻿namespace Inkore.UI.WinForms.Styler.Native {
 
     internal enum HitTest : int {
         HTERROR             = (-2),
