@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="http://www.animasterstudios.com/products/apps/UI.WinForms.Styler" target="_blank" rel="noopener noreferrer">
+  <a target="_blank" rel="noopener noreferrer">
     <img width="128" src="https://avatars.githubusercontent.com/u/130115968?s=400&u=429fd077695ef722acd8164adf5a39b37ead79eb&v=4" alt="iNKROE!">
   </a>
 </p>
