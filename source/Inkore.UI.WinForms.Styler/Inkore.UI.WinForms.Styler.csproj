@@ -19,9 +19,7 @@
 		<Reference Include="System.Security" />
 	</ItemGroup>
 	<ItemGroup>
-		<Compile Update="Controls\ThemeText\ThemedLabel.cs">
-			<SubType>Component</SubType>
-		</Compile>
+		<Compile Update="Controls\ThemeText\ThemedLabel.cs" />
 	</ItemGroup>
 	<ItemGroup>
 		<BootstrapperPackage Include="Microsoft.Net.Framework.2.0">

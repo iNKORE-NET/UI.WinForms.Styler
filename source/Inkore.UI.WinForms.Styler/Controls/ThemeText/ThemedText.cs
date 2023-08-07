@@ -1,14 +1,4 @@
-﻿/*****************************************************
-
- * 
-
- * 
-
-
- * 
- *****************************************************/
-
-using System;
+﻿using System;
 using System.Drawing;
 
 namespace Inkore.UI.WinForms.Styler.ThemeText {
