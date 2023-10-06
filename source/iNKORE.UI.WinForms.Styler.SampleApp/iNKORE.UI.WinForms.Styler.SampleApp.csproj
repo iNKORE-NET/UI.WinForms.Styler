@@ -10,7 +10,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="..\iNKORE.UI.WinForms.Styler\Resources\Icons\iNKORE_Badge.ico" Link="Resources\Icons\iNKORE_Badge.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\iNKORE.UI.WinForms.Styler\iNKORE.UI.WinForms.Styler.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Resources\Icons\" />
   </ItemGroup>
 
 </Project>

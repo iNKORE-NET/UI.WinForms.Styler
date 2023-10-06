@@ -1,13 +1,13 @@
 <p align="center">
   <a target="_blank" rel="noopener noreferrer">
-    <img width="128" src="https://avatars.githubusercontent.com/u/130115968?s=400&u=429fd077695ef722acd8164adf5a39b37ead79eb&v=4" alt="iNKROE!">
+    <img width="128" src="https://github.com/InkoreStudios/.github/blob/main/assets/Inkore_Badge.png?raw=true" alt="iNKORE Logo">
   </a>
 </p>
 
 <p align="center">A Windows Forms library that provides native controls with many of the advanced features.</p>
 
 <h1 align="center">
-  UI.WinForms.Styler
+  iNKORE.UI.WinForms.Styler
 </h1>
 
 <p align="center">Give us a star if you like this!</p>

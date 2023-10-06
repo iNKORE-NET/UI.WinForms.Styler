@@ -13,6 +13,7 @@
 		<UseWindowsForms>true</UseWindowsForms>
 		<ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
 		<AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+		<ApplicationIcon>Resources\Icons\iNKORE_Badge.ico</ApplicationIcon>
 	</PropertyGroup>
 	<ItemGroup Condition="'$(TargetFrameworkIdentifier)' == '.NETFramework'">
 		<Reference Include="System.Design" />
@@ -57,6 +58,7 @@
 		<Content Include="Dialogs\CustomDictionary.xml" />
 		<Content Include="Dialogs\ProgressDialog.bmp" />
 		<Content Include="Dialogs\TaskDialog.bmp" />
+		<Content Include="Resources\Icons\iNKORE_Badge.ico" />
 	</ItemGroup>
 	<ItemGroup>
 		<Compile Remove="Controls\NativeToolStrip.cs" />
