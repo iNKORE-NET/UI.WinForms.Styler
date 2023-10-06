@@ -114,6 +114,8 @@ namespace iNKORE.UI.WinForms.Styler.Showcase
             TreeNode treeNode82 = new TreeNode("Node20");
             TreeNode treeNode83 = new TreeNode("Node6", new TreeNode[] { treeNode80, treeNode81, treeNode82 });
             TreeNode treeNode84 = new TreeNode("Node7");
+            ListViewGroup listViewGroup1 = new ListViewGroup("ListViewGroup 1", HorizontalAlignment.Left);
+            ListViewGroup listViewGroup2 = new ListViewGroup("ListViewGroup 2", HorizontalAlignment.Left);
             ListViewItem listViewItem1 = new ListViewItem("Item 1", 0);
             ListViewItem listViewItem2 = new ListViewItem("Item 2", 4);
             ListViewItem listViewItem3 = new ListViewItem("Item 3", 10);
@@ -218,10 +220,11 @@ namespace iNKORE.UI.WinForms.Styler.Showcase
             // themedLabel2
             // 
             themedLabel2.Dock = DockStyle.Bottom;
-            themedLabel2.Location = new Point(0, 507);
+            themedLabel2.Location = new Point(0, 760);
+            themedLabel2.Margin = new Padding(4, 4, 4, 4);
             themedLabel2.Name = "themedLabel2";
-            themedLabel2.Padding = new Padding(0, 0, 7, 8);
-            themedLabel2.Size = new Size(710, 36);
+            themedLabel2.Padding = new Padding(0, 0, 10, 12);
+            themedLabel2.Size = new Size(1065, 54);
             themedLabel2.TabIndex = 26;
             themedLabel2.Text = "Welcome! Take a look around.";
             themedLabel2.TextAlign = HorizontalAlignment.Center;
@@ -231,10 +234,11 @@ namespace iNKORE.UI.WinForms.Styler.Showcase
             // 
             themedLabel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             themedLabel1.Font = new Font("Microsoft YaHei UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            themedLabel1.Location = new Point(49, -1);
+            themedLabel1.Location = new Point(74, -2);
+            themedLabel1.Margin = new Padding(4, 4, 4, 4);
             themedLabel1.Name = "themedLabel1";
-            themedLabel1.Padding = new Padding(9, 0, 0, 0);
-            themedLabel1.Size = new Size(451, 57);
+            themedLabel1.Padding = new Padding(14, 0, 0, 0);
+            themedLabel1.Size = new Size(676, 86);
             themedLabel1.TabIndex = 25;
             themedLabel1.Text = "iNKORE.UI.WinForms.Styler";
             themedLabel1.TextAlignVertical = System.Windows.Forms.VisualStyles.VerticalAlignment.Center;
@@ -246,10 +250,11 @@ namespace iNKORE.UI.WinForms.Styler.Showcase
             tabControl1.Controls.Add(tabPage4);
             tabControl1.Controls.Add(tabPage5);
             tabControl1.Controls.Add(tabPage2);
-            tabControl1.Location = new Point(5, 67);
+            tabControl1.Location = new Point(8, 100);
+            tabControl1.Margin = new Padding(4, 4, 4, 4);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(699, 434);
+            tabControl1.Size = new Size(1048, 651);
             tabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -261,10 +266,11 @@ namespace iNKORE.UI.WinForms.Styler.Showcase
             tabPage1.Controls.Add(commandLink3);
             tabPage1.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
             tabPage1.ForeColor = SystemColors.ControlText;
-            tabPage1.Location = new Point(4, 26);
+            tabPage1.Location = new Point(4, 33);
+            tabPage1.Margin = new Padding(4, 4, 4, 4);
             tabPage1.Name = "tabPage1";
-            tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(691, 404);
+            tabPage1.Padding = new Padding(4, 4, 4, 4);
+            tabPage1.Size = new Size(1040, 614);
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Basic Controls";
             tabPage1.UseVisualStyleBackColor = true;
@@ -275,18 +281,20 @@ namespace iNKORE.UI.WinForms.Styler.Showcase
             stylePanel2.BackColor = Color.Transparent;
             stylePanel2.Controls.Add(button3);
             stylePanel2.Controls.Add(advComboBox1);
-            stylePanel2.Location = new Point(112, 318);
+            stylePanel2.Location = new Point(168, 477);
+            stylePanel2.Margin = new Padding(4, 4, 4, 4);
             stylePanel2.Name = "stylePanel2";
-            stylePanel2.Size = new Size(466, 51);
+            stylePanel2.Size = new Size(699, 76);
             stylePanel2.TabIndex = 12;
             stylePanel2.Theme = Styler.Controls.StylePanelThemes.TooltipBox;
             // 
             // button3
             // 
             button3.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            button3.Location = new Point(355, 13);
+            button3.Location = new Point(532, 20);
+            button3.Margin = new Padding(4, 4, 4, 4);
             button3.Name = "button3";
-            button3.Size = new Size(97, 23);
+            button3.Size = new Size(146, 34);
             button3.TabIndex = 1;
             button3.Text = "ShowDialog";
             button3.UseVisualStyleBackColor = true;
@@ -299,9 +307,10 @@ namespace iNKORE.UI.WinForms.Styler.Showcase
             advComboBox1.FlatStyle = FlatStyle.System;
             advComboBox1.FormattingEnabled = true;
             advComboBox1.Items.AddRange(new object[] { "Task Dialog", "Task Dialog with command links", "Progress Dialog", "Credential Dialog", "Vista-style Folder Browser Dialog", "Vista-style Open File Dialog", "Vista-style Save File Dialog", "ShellAboutDialog" });
-            advComboBox1.Location = new Point(12, 15);
+            advComboBox1.Location = new Point(18, 22);
+            advComboBox1.Margin = new Padding(4, 4, 4, 4);
             advComboBox1.Name = "advComboBox1";
-            advComboBox1.Size = new Size(337, 21);
+            advComboBox1.Size = new Size(504, 31);
             advComboBox1.TabIndex = 0;
             // 
             // stylePanel1
@@ -320,51 +329,57 @@ namespace iNKORE.UI.WinForms.Styler.Showcase
             stylePanel1.Controls.Add(commandLink1);
             stylePanel1.Controls.Add(commandLink2);
             stylePanel1.Controls.Add(button1);
-            stylePanel1.Location = new Point(112, 52);
+            stylePanel1.Location = new Point(168, 78);
+            stylePanel1.Margin = new Padding(4, 4, 4, 4);
             stylePanel1.Name = "stylePanel1";
-            stylePanel1.Size = new Size(466, 260);
+            stylePanel1.Size = new Size(699, 390);
             stylePanel1.TabIndex = 11;
             stylePanel1.Theme = Styler.Controls.StylePanelThemes.CtrlNavigation;
             // 
             // progressBar1
             // 
-            progressBar1.Location = new Point(12, 14);
+            progressBar1.Location = new Point(18, 21);
+            progressBar1.Margin = new Padding(4, 4, 4, 4);
             progressBar1.Name = "progressBar1";
-            progressBar1.Size = new Size(188, 24);
+            progressBar1.Size = new Size(282, 36);
             progressBar1.TabIndex = 4;
             progressBar1.Value = 70;
             // 
             // textBox1
             // 
             textBox1.CueBannerText = "Cue banner";
-            textBox1.Location = new Point(12, 165);
+            textBox1.Location = new Point(18, 248);
+            textBox1.Margin = new Padding(4, 4, 4, 4);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(188, 22);
+            textBox1.Size = new Size(280, 29);
             textBox1.TabIndex = 8;
             // 
             // progressBar4
             // 
-            progressBar4.Location = new Point(12, 122);
+            progressBar4.Location = new Point(18, 183);
+            progressBar4.Margin = new Padding(4, 4, 4, 4);
             progressBar4.Name = "progressBar4";
-            progressBar4.Size = new Size(188, 24);
+            progressBar4.Size = new Size(282, 36);
             progressBar4.Style = ProgressBarStyle.Marquee;
             progressBar4.TabIndex = 7;
             // 
             // textBox2
             // 
             textBox2.CueBannerText = "Cue banner (w/focus)";
-            textBox2.Location = new Point(12, 194);
+            textBox2.Location = new Point(18, 291);
+            textBox2.Margin = new Padding(4, 4, 4, 4);
             textBox2.Name = "textBox2";
             textBox2.ShowCueFocused = true;
-            textBox2.Size = new Size(188, 22);
+            textBox2.Size = new Size(280, 29);
             textBox2.TabIndex = 9;
             // 
             // progressBar3
             // 
-            progressBar3.Location = new Point(12, 86);
+            progressBar3.Location = new Point(18, 129);
+            progressBar3.Margin = new Padding(4, 4, 4, 4);
             progressBar3.Name = "progressBar3";
             progressBar3.ProgressState = Styler.Controls.AdvProgressBarState.Error;
-            progressBar3.Size = new Size(188, 24);
+            progressBar3.Size = new Size(282, 36);
             progressBar3.TabIndex = 6;
             progressBar3.Value = 30;
             // 
@@ -375,26 +390,29 @@ namespace iNKORE.UI.WinForms.Styler.Showcase
             comboBox1.FlatStyle = FlatStyle.System;
             comboBox1.FormattingEnabled = true;
             comboBox1.Items.AddRange(new object[] { "1", "2", "3", "4", "5" });
-            comboBox1.Location = new Point(12, 223);
+            comboBox1.Location = new Point(18, 334);
+            comboBox1.Margin = new Padding(4, 4, 4, 4);
             comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(188, 21);
+            comboBox1.Size = new Size(280, 31);
             comboBox1.TabIndex = 10;
             // 
             // progressBar2
             // 
-            progressBar2.Location = new Point(12, 50);
+            progressBar2.Location = new Point(18, 75);
+            progressBar2.Margin = new Padding(4, 4, 4, 4);
             progressBar2.Name = "progressBar2";
             progressBar2.ProgressState = Styler.Controls.AdvProgressBarState.Paused;
-            progressBar2.Size = new Size(188, 24);
+            progressBar2.Size = new Size(282, 36);
             progressBar2.TabIndex = 5;
             progressBar2.Value = 50;
             // 
             // splitButton1
             // 
             splitButton1.FlatStyle = FlatStyle.System;
-            splitButton1.Location = new Point(336, 50);
+            splitButton1.Location = new Point(504, 75);
+            splitButton1.Margin = new Padding(4, 4, 4, 4);
             splitButton1.Name = "splitButton1";
-            splitButton1.Size = new Size(116, 30);
+            splitButton1.Size = new Size(174, 45);
             splitButton1.SplitMenuStrip = contextMenu1;
             splitButton1.TabIndex = 1;
             splitButton1.Text = "Split left";
@@ -405,32 +423,33 @@ namespace iNKORE.UI.WinForms.Styler.Showcase
             contextMenu1.ImageScalingSize = new Size(24, 24);
             contextMenu1.Items.AddRange(new ToolStripItem[] { menuItem3, menuItem1, menuItem2 });
             contextMenu1.Name = "contextMenu1";
-            contextMenu1.Size = new Size(135, 70);
+            contextMenu1.Size = new Size(171, 94);
             // 
             // menuItem3
             // 
             menuItem3.Name = "menuItem3";
-            menuItem3.Size = new Size(134, 22);
+            menuItem3.Size = new Size(170, 30);
             menuItem3.Text = "Automatic";
             // 
             // menuItem1
             // 
             menuItem1.Name = "menuItem1";
-            menuItem1.Size = new Size(134, 22);
+            menuItem1.Size = new Size(170, 30);
             menuItem1.Text = "Context";
             // 
             // menuItem2
             // 
             menuItem2.Name = "menuItem2";
-            menuItem2.Size = new Size(134, 22);
+            menuItem2.Size = new Size(170, 30);
             menuItem2.Text = "Menu";
             // 
             // splitButton2
             // 
             splitButton2.FlatStyle = FlatStyle.System;
-            splitButton2.Location = new Point(215, 50);
+            splitButton2.Location = new Point(322, 75);
+            splitButton2.Margin = new Padding(4, 4, 4, 4);
             splitButton2.Name = "splitButton2";
-            splitButton2.Size = new Size(115, 30);
+            splitButton2.Size = new Size(172, 45);
             splitButton2.SplitMenuStrip = contextMenu1;
             splitButton2.TabIndex = 6;
             splitButton2.Text = "Split";
@@ -439,10 +458,11 @@ namespace iNKORE.UI.WinForms.Styler.Showcase
             // commandLink1
             // 
             commandLink1.FlatStyle = FlatStyle.System;
-            commandLink1.Location = new Point(215, 86);
+            commandLink1.Location = new Point(322, 129);
+            commandLink1.Margin = new Padding(4, 4, 4, 4);
             commandLink1.Name = "commandLink1";
             commandLink1.Note = "Detail note.";
-            commandLink1.Size = new Size(237, 73);
+            commandLink1.Size = new Size(356, 110);
             commandLink1.TabIndex = 2;
             commandLink1.Text = "Command Link";
             commandLink1.UseVisualStyleBackColor = true;
@@ -451,11 +471,12 @@ namespace iNKORE.UI.WinForms.Styler.Showcase
             // commandLink2
             // 
             commandLink2.FlatStyle = FlatStyle.System;
-            commandLink2.Location = new Point(215, 165);
+            commandLink2.Location = new Point(322, 248);
+            commandLink2.Margin = new Padding(4, 4, 4, 4);
             commandLink2.Name = "commandLink2";
             commandLink2.Note = "This command requires administrator access rights.";
             commandLink2.ShowShield = true;
-            commandLink2.Size = new Size(237, 77);
+            commandLink2.Size = new Size(356, 116);
             commandLink2.TabIndex = 3;
             commandLink2.Text = "Shield";
             commandLink2.UseVisualStyleBackColor = true;
@@ -463,10 +484,11 @@ namespace iNKORE.UI.WinForms.Styler.Showcase
             // button1
             // 
             button1.FlatStyle = FlatStyle.System;
-            button1.Location = new Point(215, 14);
+            button1.Location = new Point(322, 21);
+            button1.Margin = new Padding(4, 4, 4, 4);
             button1.Name = "button1";
             button1.ShowShield = true;
-            button1.Size = new Size(237, 30);
+            button1.Size = new Size(356, 45);
             button1.TabIndex = 0;
             button1.Text = "Shield Button";
             button1.UseVisualStyleBackColor = true;
@@ -475,9 +497,10 @@ namespace iNKORE.UI.WinForms.Styler.Showcase
             // 
             commandLink4.Anchor = AnchorStyles.None;
             commandLink4.FlatStyle = FlatStyle.System;
-            commandLink4.Location = new Point(281, 11);
+            commandLink4.Location = new Point(422, 16);
+            commandLink4.Margin = new Padding(4, 4, 4, 4);
             commandLink4.Name = "commandLink4";
-            commandLink4.Size = new Size(225, 47);
+            commandLink4.Size = new Size(338, 70);
             commandLink4.TabIndex = 5;
             commandLink4.Text = "Test Horizontal Panel";
             commandLink4.UseVisualStyleBackColor = true;
@@ -488,9 +511,10 @@ namespace iNKORE.UI.WinForms.Styler.Showcase
             // 
             commandLink3.Anchor = AnchorStyles.None;
             commandLink3.FlatStyle = FlatStyle.System;
-            commandLink3.Location = new Point(40, 11);
+            commandLink3.Location = new Point(60, 16);
+            commandLink3.Margin = new Padding(4, 4, 4, 4);
             commandLink3.Name = "commandLink3";
-            commandLink3.Size = new Size(224, 49);
+            commandLink3.Size = new Size(336, 74);
             commandLink3.TabIndex = 4;
             commandLink3.Text = "Test Vertical Panel";
             commandLink3.UseVisualStyleBackColor = true;
@@ -504,10 +528,11 @@ namespace iNKORE.UI.WinForms.Styler.Showcase
             tabPage4.Controls.Add(treeView2);
             tabPage4.Controls.Add(listView1);
             tabPage4.Controls.Add(label2);
-            tabPage4.Location = new Point(4, 26);
+            tabPage4.Location = new Point(4, 33);
+            tabPage4.Margin = new Padding(4, 4, 4, 4);
             tabPage4.Name = "tabPage4";
-            tabPage4.Padding = new Padding(3);
-            tabPage4.Size = new Size(691, 404);
+            tabPage4.Padding = new Padding(4, 4, 4, 4);
+            tabPage4.Size = new Size(1040, 614);
             tabPage4.TabIndex = 3;
             tabPage4.Text = "Data controls";
             tabPage4.UseVisualStyleBackColor = true;
@@ -518,7 +543,8 @@ namespace iNKORE.UI.WinForms.Styler.Showcase
             treeView1.HotTracking = true;
             treeView1.ImageIndex = 0;
             treeView1.ImageList = imageList1;
-            treeView1.Location = new Point(6, 6);
+            treeView1.Location = new Point(9, 9);
+            treeView1.Margin = new Padding(4, 4, 4, 4);
             treeView1.Name = "treeView1";
             treeNode1.ImageIndex = 10;
             treeNode1.Name = "Node1";
@@ -633,16 +659,15 @@ namespace iNKORE.UI.WinForms.Styler.Showcase
             treeView1.SelectedImageIndex = 0;
             treeView1.ShowHScroll = false;
             treeView1.ShowLines = false;
-            treeView1.Size = new Size(135, 347);
+            treeView1.Size = new Size(200, 518);
             treeView1.TabIndex = 4;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(6, 330);
-            label1.Margin = new Padding(2, 0, 2, 0);
+            label1.Location = new Point(9, 495);
             label1.Name = "label1";
-            label1.Size = new Size(92, 17);
+            label1.Size = new Size(133, 24);
             label1.TabIndex = 7;
             label1.Text = "Aero tree view";
             label1.Click += label1_Click;
@@ -653,7 +678,8 @@ namespace iNKORE.UI.WinForms.Styler.Showcase
             treeView2.HotTracking = true;
             treeView2.ImageIndex = 0;
             treeView2.ImageList = imageList1;
-            treeView2.Location = new Point(147, 6);
+            treeView2.Location = new Point(220, 9);
+            treeView2.Margin = new Padding(4, 4, 4, 4);
             treeView2.Name = "treeView2";
             treeNode43.ImageIndex = 10;
             treeNode43.Name = "Node1";
@@ -767,17 +793,25 @@ namespace iNKORE.UI.WinForms.Styler.Showcase
             treeView2.Nodes.AddRange(new TreeNode[] { treeNode43, treeNode44, treeNode51, treeNode62, treeNode63, treeNode73, treeNode83, treeNode84 });
             treeView2.SelectedImageIndex = 0;
             treeView2.ShowLines = false;
-            treeView2.Size = new Size(135, 347);
+            treeView2.Size = new Size(200, 518);
             treeView2.TabIndex = 6;
             // 
             // listView1
             // 
             listView1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            listViewGroup1.Header = "ListViewGroup 1";
+            listViewGroup1.Name = "listViewGroup1";
+            listViewGroup2.Header = "ListViewGroup 2";
+            listViewGroup2.Name = "listViewGroup2";
+            listView1.Groups.AddRange(new ListViewGroup[] { listViewGroup1, listViewGroup2 });
+            listViewItem3.Group = listViewGroup1;
+            listViewItem4.Group = listViewGroup1;
             listView1.Items.AddRange(new ListViewItem[] { listViewItem1, listViewItem2, listViewItem3, listViewItem4, listViewItem5 });
             listView1.LargeImageList = imageList2;
-            listView1.Location = new Point(288, 6);
+            listView1.Location = new Point(432, 9);
+            listView1.Margin = new Padding(4, 4, 4, 4);
             listView1.Name = "listView1";
-            listView1.Size = new Size(397, 347);
+            listView1.Size = new Size(594, 518);
             listView1.SmallImageList = imageList1;
             listView1.TabIndex = 5;
             listView1.UseCompatibleStateImageBehavior = false;
@@ -802,10 +836,9 @@ namespace iNKORE.UI.WinForms.Styler.Showcase
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(147, 330);
-            label2.Margin = new Padding(2, 0, 2, 0);
+            label2.Location = new Point(220, 495);
             label2.Name = "label2";
-            label2.Size = new Size(117, 17);
+            label2.Size = new Size(171, 24);
             label2.TabIndex = 8;
             label2.Text = "Standard tree view";
             label2.Click += label2_Click;
@@ -814,19 +847,21 @@ namespace iNKORE.UI.WinForms.Styler.Showcase
             // 
             tabPage5.Controls.Add(button2);
             tabPage5.Controls.Add(thumbnailViewer1);
-            tabPage5.Location = new Point(4, 26);
+            tabPage5.Location = new Point(4, 33);
+            tabPage5.Margin = new Padding(4, 4, 4, 4);
             tabPage5.Name = "tabPage5";
-            tabPage5.Padding = new Padding(3);
-            tabPage5.Size = new Size(691, 404);
+            tabPage5.Padding = new Padding(4, 4, 4, 4);
+            tabPage5.Size = new Size(1040, 614);
             tabPage5.TabIndex = 4;
             tabPage5.Text = "DWM";
             tabPage5.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
-            button2.Location = new Point(290, 107);
+            button2.Location = new Point(435, 160);
+            button2.Margin = new Padding(4, 4, 4, 4);
             button2.Name = "button2";
-            button2.Size = new Size(198, 53);
+            button2.Size = new Size(297, 80);
             button2.TabIndex = 1;
             button2.Text = "ShowWindow";
             button2.UseVisualStyleBackColor = true;
@@ -834,10 +869,11 @@ namespace iNKORE.UI.WinForms.Styler.Showcase
             // 
             // thumbnailViewer1
             // 
-            thumbnailViewer1.Location = new Point(7, 8);
+            thumbnailViewer1.Location = new Point(10, 12);
+            thumbnailViewer1.Margin = new Padding(4, 4, 4, 4);
             thumbnailViewer1.Name = "thumbnailViewer1";
             thumbnailViewer1.ScaleSmallerThumbnails = false;
-            thumbnailViewer1.Size = new Size(187, 215);
+            thumbnailViewer1.Size = new Size(280, 322);
             thumbnailViewer1.TabIndex = 0;
             thumbnailViewer1.Text = "thumbnailViewer1";
             thumbnailViewer1.ThumbnailAlignment = ContentAlignment.MiddleCenter;
@@ -845,10 +881,11 @@ namespace iNKORE.UI.WinForms.Styler.Showcase
             // tabPage2
             // 
             tabPage2.Controls.Add(panel1);
-            tabPage2.Location = new Point(4, 26);
+            tabPage2.Location = new Point(4, 33);
+            tabPage2.Margin = new Padding(4, 4, 4, 4);
             tabPage2.Name = "tabPage2";
-            tabPage2.Padding = new Padding(10);
-            tabPage2.Size = new Size(691, 404);
+            tabPage2.Padding = new Padding(15, 15, 15, 15);
+            tabPage2.Size = new Size(1040, 614);
             tabPage2.TabIndex = 5;
             tabPage2.Text = "Rebar";
             tabPage2.UseVisualStyleBackColor = true;
@@ -863,9 +900,10 @@ namespace iNKORE.UI.WinForms.Styler.Showcase
             panel1.Controls.Add(menuStrip1);
             panel1.Controls.Add(rebarWrapper1);
             panel1.Dock = DockStyle.Fill;
-            panel1.Location = new Point(10, 10);
+            panel1.Location = new Point(15, 15);
+            panel1.Margin = new Padding(4, 4, 4, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(671, 384);
+            panel1.Size = new Size(1010, 584);
             panel1.TabIndex = 1;
             // 
             // richTextBox1
@@ -873,8 +911,9 @@ namespace iNKORE.UI.WinForms.Styler.Showcase
             richTextBox1.BorderStyle = BorderStyle.None;
             richTextBox1.Dock = DockStyle.Fill;
             richTextBox1.Location = new Point(0, 0);
+            richTextBox1.Margin = new Padding(4, 4, 4, 4);
             richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(667, 380);
+            richTextBox1.Size = new Size(1006, 580);
             richTextBox1.TabIndex = 5;
             richTextBox1.Text = "Windows Native Rebar Sample!";
             // 
@@ -885,17 +924,19 @@ namespace iNKORE.UI.WinForms.Styler.Showcase
             searchTextBox1.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             searchTextBox1.ForeColor = SystemColors.WindowText;
             searchTextBox1.InactiveFont = new Font("Microsoft YaHei UI", 9F, FontStyle.Italic, GraphicsUnit.Point);
-            searchTextBox1.Location = new Point(279, 220);
+            searchTextBox1.Location = new Point(418, 330);
+            searchTextBox1.Margin = new Padding(4, 4, 4, 4);
             searchTextBox1.Name = "searchTextBox1";
-            searchTextBox1.Size = new Size(150, 21);
+            searchTextBox1.Size = new Size(224, 30);
             searchTextBox1.TabIndex = 3;
             searchTextBox1.Text = "searchTextBox1";
             // 
             // advTextBox1
             // 
-            advTextBox1.Location = new Point(160, 220);
+            advTextBox1.Location = new Point(240, 330);
+            advTextBox1.Margin = new Padding(4, 4, 4, 4);
             advTextBox1.Name = "advTextBox1";
-            advTextBox1.Size = new Size(100, 23);
+            advTextBox1.Size = new Size(148, 30);
             advTextBox1.TabIndex = 2;
             // 
             // toolStrip1
@@ -903,10 +944,12 @@ namespace iNKORE.UI.WinForms.Styler.Showcase
             toolStrip1.AutoSize = false;
             toolStrip1.Dock = DockStyle.None;
             toolStrip1.GripStyle = ToolStripGripStyle.Hidden;
+            toolStrip1.ImageScalingSize = new Size(24, 24);
             toolStrip1.Items.AddRange(new ToolStripItem[] { toolStripButton1, toolStripButton2, toolStripButton3, toolStripLabel1, toolStripSplitButton1, toolStripDropDownButton1, toolStripProgressBar1, toolStripTextBox1, toolStripComboBox1 });
-            toolStrip1.Location = new Point(28, 128);
+            toolStrip1.Location = new Point(42, 192);
             toolStrip1.Name = "toolStrip1";
-            toolStrip1.Size = new Size(541, 29);
+            toolStrip1.Padding = new Padding(0, 0, 3, 0);
+            toolStrip1.Size = new Size(812, 44);
             toolStrip1.TabIndex = 1;
             toolStrip1.Text = "toolStrip1";
             // 
@@ -916,7 +959,7 @@ namespace iNKORE.UI.WinForms.Styler.Showcase
             toolStripButton1.Image = (Image)resources.GetObject("toolStripButton1.Image");
             toolStripButton1.ImageTransparentColor = Color.Magenta;
             toolStripButton1.Name = "toolStripButton1";
-            toolStripButton1.Size = new Size(23, 26);
+            toolStripButton1.Size = new Size(34, 39);
             toolStripButton1.Text = "toolStripButton1";
             // 
             // toolStripButton2
@@ -925,7 +968,7 @@ namespace iNKORE.UI.WinForms.Styler.Showcase
             toolStripButton2.Image = (Image)resources.GetObject("toolStripButton2.Image");
             toolStripButton2.ImageTransparentColor = Color.Magenta;
             toolStripButton2.Name = "toolStripButton2";
-            toolStripButton2.Size = new Size(23, 26);
+            toolStripButton2.Size = new Size(34, 39);
             toolStripButton2.Text = "toolStripButton2";
             // 
             // toolStripButton3
@@ -934,13 +977,13 @@ namespace iNKORE.UI.WinForms.Styler.Showcase
             toolStripButton3.Image = (Image)resources.GetObject("toolStripButton3.Image");
             toolStripButton3.ImageTransparentColor = Color.Magenta;
             toolStripButton3.Name = "toolStripButton3";
-            toolStripButton3.Size = new Size(23, 26);
+            toolStripButton3.Size = new Size(34, 39);
             toolStripButton3.Text = "toolStripButton3";
             // 
             // toolStripLabel1
             // 
             toolStripLabel1.Name = "toolStripLabel1";
-            toolStripLabel1.Size = new Size(96, 26);
+            toolStripLabel1.Size = new Size(142, 39);
             toolStripLabel1.Text = "toolStripLabel1";
             // 
             // toolStripSplitButton1
@@ -949,7 +992,7 @@ namespace iNKORE.UI.WinForms.Styler.Showcase
             toolStripSplitButton1.Image = (Image)resources.GetObject("toolStripSplitButton1.Image");
             toolStripSplitButton1.ImageTransparentColor = Color.Magenta;
             toolStripSplitButton1.Name = "toolStripSplitButton1";
-            toolStripSplitButton1.Size = new Size(32, 26);
+            toolStripSplitButton1.Size = new Size(45, 39);
             toolStripSplitButton1.Text = "toolStripSplitButton1";
             // 
             // toolStripDropDownButton1
@@ -958,32 +1001,34 @@ namespace iNKORE.UI.WinForms.Styler.Showcase
             toolStripDropDownButton1.Image = (Image)resources.GetObject("toolStripDropDownButton1.Image");
             toolStripDropDownButton1.ImageTransparentColor = Color.Magenta;
             toolStripDropDownButton1.Name = "toolStripDropDownButton1";
-            toolStripDropDownButton1.Size = new Size(29, 26);
+            toolStripDropDownButton1.Size = new Size(42, 39);
             toolStripDropDownButton1.Text = "toolStripDropDownButton1";
             // 
             // toolStripProgressBar1
             // 
             toolStripProgressBar1.Name = "toolStripProgressBar1";
-            toolStripProgressBar1.Size = new Size(100, 26);
+            toolStripProgressBar1.Size = new Size(150, 39);
             // 
             // toolStripTextBox1
             // 
             toolStripTextBox1.Name = "toolStripTextBox1";
-            toolStripTextBox1.Size = new Size(100, 29);
+            toolStripTextBox1.Size = new Size(100, 44);
             // 
             // toolStripComboBox1
             // 
             toolStripComboBox1.Name = "toolStripComboBox1";
-            toolStripComboBox1.Size = new Size(121, 25);
+            toolStripComboBox1.Size = new Size(121, 44);
             // 
             // menuStrip1
             // 
             menuStrip1.AutoSize = false;
             menuStrip1.Dock = DockStyle.None;
+            menuStrip1.ImageScalingSize = new Size(24, 24);
             menuStrip1.Items.AddRange(new ToolStripItem[] { fileToolStripMenuItem, editToolStripMenuItem, viewToolStripMenuItem, toolsToolStripMenuItem, windowToolStripMenuItem, helpToolStripMenuItem });
-            menuStrip1.Location = new Point(43, 58);
+            menuStrip1.Location = new Point(64, 87);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(422, 25);
+            menuStrip1.Padding = new Padding(9, 3, 0, 3);
+            menuStrip1.Size = new Size(633, 38);
             menuStrip1.TabIndex = 4;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -991,58 +1036,59 @@ namespace iNKORE.UI.WinForms.Styler.Showcase
             // 
             fileToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { newToolStripMenuItem });
             fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            fileToolStripMenuItem.Size = new Size(39, 21);
+            fileToolStripMenuItem.Size = new Size(56, 32);
             fileToolStripMenuItem.Text = "File";
             // 
             // newToolStripMenuItem
             // 
             newToolStripMenuItem.Name = "newToolStripMenuItem";
-            newToolStripMenuItem.Size = new Size(102, 22);
+            newToolStripMenuItem.Size = new Size(149, 34);
             newToolStripMenuItem.Text = "New";
             // 
             // editToolStripMenuItem
             // 
             editToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { undoToolStripMenuItem });
             editToolStripMenuItem.Name = "editToolStripMenuItem";
-            editToolStripMenuItem.Size = new Size(42, 21);
+            editToolStripMenuItem.Size = new Size(60, 32);
             editToolStripMenuItem.Text = "Edit";
             // 
             // undoToolStripMenuItem
             // 
             undoToolStripMenuItem.Name = "undoToolStripMenuItem";
-            undoToolStripMenuItem.Size = new Size(108, 22);
+            undoToolStripMenuItem.Size = new Size(157, 34);
             undoToolStripMenuItem.Text = "Undo";
             // 
             // viewToolStripMenuItem
             // 
             viewToolStripMenuItem.Name = "viewToolStripMenuItem";
-            viewToolStripMenuItem.Size = new Size(47, 21);
+            viewToolStripMenuItem.Size = new Size(67, 32);
             viewToolStripMenuItem.Text = "View";
             // 
             // toolsToolStripMenuItem
             // 
             toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
-            toolsToolStripMenuItem.Size = new Size(52, 21);
+            toolsToolStripMenuItem.Size = new Size(71, 32);
             toolsToolStripMenuItem.Text = "Tools";
             // 
             // windowToolStripMenuItem
             // 
             windowToolStripMenuItem.Name = "windowToolStripMenuItem";
-            windowToolStripMenuItem.Size = new Size(67, 21);
+            windowToolStripMenuItem.Size = new Size(97, 32);
             windowToolStripMenuItem.Text = "Window";
             // 
             // helpToolStripMenuItem
             // 
             helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            helpToolStripMenuItem.Size = new Size(47, 21);
+            helpToolStripMenuItem.Size = new Size(67, 32);
             helpToolStripMenuItem.Text = "Help";
             // 
             // rebarWrapper1
             // 
             rebarWrapper1.Dock = DockStyle.Top;
             rebarWrapper1.Location = new Point(0, 0);
+            rebarWrapper1.Margin = new Padding(4, 4, 4, 4);
             rebarWrapper1.Name = "rebarWrapper1";
-            rebarWrapper1.Size = new Size(667, 0);
+            rebarWrapper1.Size = new Size(1006, 0);
             rebarWrapper1.TabIndex = 0;
             rebarWrapper1.Text = "rebarWrapper1";
             // 
@@ -1050,9 +1096,10 @@ namespace iNKORE.UI.WinForms.Styler.Showcase
             // 
             navigationButton1.Anchor = AnchorStyles.Left;
             navigationButton1.BackColor = Color.Black;
-            navigationButton1.Location = new Point(13, 14);
+            navigationButton1.Location = new Point(20, 21);
+            navigationButton1.Margin = new Padding(4, 4, 4, 4);
             navigationButton1.Name = "navigationButton1";
-            navigationButton1.Size = new Size(30, 30);
+            navigationButton1.Size = new Size(45, 45);
             navigationButton1.TabIndex = 27;
             navigationButton1.Text = "navigationButton1";
             navigationButton1.Type = Styler.Controls.NavigationButtonType.Back;
@@ -1061,9 +1108,10 @@ namespace iNKORE.UI.WinForms.Styler.Showcase
             // 
             navigationButton2.Anchor = AnchorStyles.Right;
             navigationButton2.BackColor = Color.Black;
-            navigationButton2.Location = new Point(668, 14);
+            navigationButton2.Location = new Point(1002, 21);
+            navigationButton2.Margin = new Padding(4, 4, 4, 4);
             navigationButton2.Name = "navigationButton2";
-            navigationButton2.Size = new Size(30, 30);
+            navigationButton2.Size = new Size(45, 45);
             navigationButton2.TabIndex = 28;
             navigationButton2.Text = "navigationButton2";
             navigationButton2.Type = Styler.Controls.NavigationButtonType.Forward;
@@ -1076,21 +1124,21 @@ namespace iNKORE.UI.WinForms.Styler.Showcase
             Panel_TopNavArea.Controls.Add(themedLabel1);
             Panel_TopNavArea.Dock = DockStyle.Top;
             Panel_TopNavArea.Location = new Point(0, 0);
+            Panel_TopNavArea.Margin = new Padding(4, 4, 4, 4);
             Panel_TopNavArea.Name = "Panel_TopNavArea";
-            Panel_TopNavArea.Size = new Size(710, 60);
+            Panel_TopNavArea.Size = new Size(1065, 90);
             Panel_TopNavArea.TabIndex = 29;
             // 
             // Main
             // 
-            AutoScaleDimensions = new SizeF(96F, 96F);
+            AutoScaleDimensions = new SizeF(144F, 144F);
             AutoScaleMode = AutoScaleMode.Dpi;
-            ClientSize = new Size(710, 543);
+            ClientSize = new Size(1065, 814);
             Controls.Add(Panel_TopNavArea);
             Controls.Add(tabControl1);
             Controls.Add(themedLabel2);
             HideTitle = true;
-            Margin = new Padding(2);
-            MinimumSize = new Size(653, 432);
+            MinimumSize = new Size(968, 620);
             Name = "Main";
             SizeGripStyle = SizeGripStyle.Show;
             Text = "iNKORE.UI.WinForms.Styler";

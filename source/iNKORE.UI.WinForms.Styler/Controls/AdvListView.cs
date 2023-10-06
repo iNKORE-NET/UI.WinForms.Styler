@@ -67,14 +67,14 @@ namespace iNKORE.UI.WinForms.Styler.Controls
             return rtnval;
         }
 
-        public static void setGrpState(ListViewGroup lstvwgrp, ListViewGroupState state)
+        public static void SetGroupState(ListViewGroup lstvwgrp, ListViewGroupState state)
         {
             if (Environment.OSVersion.Version.Major < 6)   //Only Vista and forward allows collaps of ListViewGroups
                 return;
             if (lstvwgrp == null || lstvwgrp.ListView == null)
                 return;
             if (lstvwgrp.ListView.InvokeRequired)
-                lstvwgrp.ListView.Invoke(new CallBackSetGroupState(setGrpState), lstvwgrp, state);
+                lstvwgrp.ListView.Invoke(new CallBackSetGroupState(SetGroupState), lstvwgrp, state);
             else
             {
                 int? GrpId = GetGroupID(lstvwgrp);
@@ -110,7 +110,7 @@ namespace iNKORE.UI.WinForms.Styler.Controls
 
 
             foreach (ListViewGroup lvg in this.Groups)
-                setGrpState(lvg, state);
+                SetGroupState(lvg, state);
         }
 
         private Boolean elv = false;

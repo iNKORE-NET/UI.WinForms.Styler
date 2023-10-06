@@ -66,6 +66,8 @@ namespace iNKORE.UI.WinForms.Styler.Showcase
             });
 
             advComboBox1.SelectedIndex = 0;
+
+            listView1.SetCurrentGroupState(ListViewGroupState.Collapsible | ListViewGroupState.Selected);
         }
 
         protected override void OnShown(EventArgs e)
