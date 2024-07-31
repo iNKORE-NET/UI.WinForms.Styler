@@ -2,18 +2,15 @@
 	<PropertyGroup>
 		<TargetFrameworks>net6.0-windows10.0.18362.0;net452</TargetFrameworks>
 		<UseWPF>true</UseWPF>
-		<UseWinRT>true</UseWinRT>
 		<NeutralLanguage>en-US</NeutralLanguage>
 		<NoWarn>1701;1702;1573;1591;CA1416;SYSLIB0003;SYSLIB0004</NoWarn>
 		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
 		<OutputType>Library</OutputType>
 		<MapFileExtensions>true</MapFileExtensions>
-		<UseApplicationTrust>false</UseApplicationTrust>
-		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
 		<UseWindowsForms>true</UseWindowsForms>
 		<ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
 		<AllowUnsafeBlocks>True</AllowUnsafeBlocks>
-		<ApplicationIcon>Resources\Icons\iNKORE_Badge.ico</ApplicationIcon>
+		<ApplicationIcon>../../assets/icons/WinFormsLibrary.ico</ApplicationIcon>
 	</PropertyGroup>
 	<ItemGroup Condition="'$(TargetFrameworkIdentifier)' == '.NETFramework'">
 		<Reference Include="System.Design" />
@@ -21,28 +18,6 @@
 	</ItemGroup>
 	<ItemGroup>
 		<Compile Update="Controls\ThemeText\ThemedLabel.cs" />
-	</ItemGroup>
-	<ItemGroup>
-		<BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
-			<Visible>False</Visible>
-			<ProductName>.NET Framework 2.0 %28x86%29</ProductName>
-			<Install>false</Install>
-		</BootstrapperPackage>
-		<BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
-			<Visible>False</Visible>
-			<ProductName>.NET Framework 3.0 %28x86%29</ProductName>
-			<Install>false</Install>
-		</BootstrapperPackage>
-		<BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
-			<Visible>False</Visible>
-			<ProductName>.NET Framework 3.5</ProductName>
-			<Install>true</Install>
-		</BootstrapperPackage>
-		<BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
-			<Visible>False</Visible>
-			<ProductName>Windows Installer 3.1</ProductName>
-			<Install>true</Install>
-		</BootstrapperPackage>
 	</ItemGroup>
 	<ItemGroup>
 		<EmbeddedResource Include="Resources\ThemedLabel.png" />
@@ -59,9 +34,5 @@
 		<Content Include="Dialogs\ProgressDialog.bmp" />
 		<Content Include="Dialogs\TaskDialog.bmp" />
 		<Content Include="Resources\Icons\iNKORE_Badge.ico" />
-	</ItemGroup>
-	<ItemGroup>
-		<Compile Remove="Controls\NativeToolStrip.cs" />
-		<Compile Remove="Controls\StyleButton2.cs" />
 	</ItemGroup>
 </Project>
