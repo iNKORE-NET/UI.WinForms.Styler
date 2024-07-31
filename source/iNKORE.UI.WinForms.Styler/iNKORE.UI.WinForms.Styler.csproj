@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
 	<PropertyGroup>
-		<TargetFrameworks>net6.0-windows10.0.18362.0;net452</TargetFrameworks>
+		<TargetFrameworks>net6.0-windows7.0;net452</TargetFrameworks>
 		<UseWPF>true</UseWPF>
 		<NeutralLanguage>en-US</NeutralLanguage>
 		<NoWarn>1701;1702;1573;1591;CA1416;SYSLIB0003;SYSLIB0004</NoWarn>
