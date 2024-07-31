@@ -1,6 +1,6 @@
 <p align="center">
   <a target="_blank" rel="noopener noreferrer">
-    <img width="128" src="https://github.com/InkoreStudios/.github/blob/main/assets/Inkore_Badge.png?raw=true" alt="iNKORE Logo">
+    <img width="128" src="https://github.com/iNKORE-NET/UI.WinForms.Styler/blob/main/assets/icons/WinFormsLibrary_256w.png" alt="iNKORE Logo">
   </a>
 </p>
 
