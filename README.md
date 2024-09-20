@@ -86,7 +86,11 @@
   - [x] **ShellAboutDialog**: Shows a dialog with windows system detials
   - [x] **VistaFolderBrowserDialog**: Prompts the user to select a folder.
 
+# References
 
+- https://github.com/LorenzCK/WindowsFormsAero
+- https://github.com/dahall/AeroWizard
+- https://github.com/ookii-dialogs/ookii-dialogs-winforms
 
 
 
